@@ -5,34 +5,48 @@ bodyClass: "page-home"
 
 <div class="intro">
   <div class="container">
+    <!-- Text content at the top -->
     <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+      <div class="col-12">
         {{ content }}
-        {% if page.show_call_box %}
-          {% include call.html show_button=true %}
-        {% endif %}
       </div>
+    </div>
+    
+    <!-- Image and contact information side by side below -->
+    <div class="row justify-content-center mt-5">
       {% if page.intro_image %}
-      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
         <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
       </div>
       {% endif %}
+      
+      <div class="col-12 col-md-6">
+        {% include call.html show_button=true %}
+      </div>
     </div>
   </div>
 </div>
 
 <div class="strip">
-  <div class="container pt-6 pb-6 pb-md-10">
+  <div class="container pt-4 pb-4 pb-md-6">
     <div class="row justify-content-start">
       {% assign limit = site.home.limit_services | default: 6 %}
       {% for service in site.services limit: limit %}
-      <div class="col-12 col-md-4 mb-1">
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
         <div class="service service-summary">
+          <div class="service-icon">
+            {% if service.icon %}
+              <i class="{{ service.icon }}"></i>
+            {% else %}
+              <i class="fas fa-cog"></i>
+            {% endif %}
+          </div>
           <div class="service-content">
             <h2 class="service-title">
               <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
             </h2>
-            <p>{{ service.excerpt | markdownify | strip_html | truncate: 100 }}</p>
+            <p>{{ service.excerpt | markdownify | strip_html | truncate: 80 }}</p>
+            <a href="{{ service.url | relative_url }}" class="btn btn-outline-primary btn-sm">Más información</a>
           </div>
         </div>
       </div>
@@ -46,9 +60,30 @@ bodyClass: "page-home"
   </div>
 </div>
 
+<div class="strip">
+  <div class="container pt-4 pb-4 pb-md-6">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 text-center">
+        <h2 class="title-3">Marcas que representamos</h2>
+        <p class="lead">Nos enorgullece asociarnos con las mejores marcas del mercado.</p>
+      </div>
+    </div>
+    <div class="row">
+      {% assign brand_images = site.static_files | where_exp: "item", "item.path contains 'assets/images/brands'" %}
+      {% for brand_image in brand_images %}
+        <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex justify-content-center align-items-center">
+          <div class="brand-logo">
+            <img alt="{{ brand_image.name | split: '.' | first }}" src="{{ brand_image.path | relative_url }}" />
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
 {% if site.data.features %}
 <div class="strip strip-grey">
-  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+  <div class="container pt-4 pb-4 pt-md-6 pb-md-6">
     <div class="row justify-content-center">
 
       {% for feature in site.data.features %}

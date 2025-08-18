@@ -1,0 +1,25 @@
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  padding: 10px;
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+// Improve brand section spacing
+.strip .brand-logo {
+  margin-bottom: 20px;
+}

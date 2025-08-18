@@ -1,12 +1,12 @@
 ---
-title: Team
+title: Nuestro Equipo
 layout: teams
-description: Team
+description: Nuestro Equipo
 permalink: "/team/"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
 
-# Meet The Team
+# Conoce a Nuestro Equipo
 
-Our team of qualified accountants and financial consultants can help your business at any stage of it's growth.
+Nuestro equipo está dedicado a brindarte el mejor servicio.

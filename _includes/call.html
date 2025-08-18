@@ -1,19 +1,29 @@
 <div class="call">
   <div class="call-box-top">
     {% if site.data.contact.phone %}
-        <div class="call-phone"><strong>Phone: </strong> {{ site.data.contact.phone }} </div>
+        <div class="call-phone">
+          <i class="fas fa-phone-alt call-icon"></i>
+          <div class="call-info">
+            <span class="call-label">Teléfono</span>
+            <a href="tel:{{ site.data.contact.phone }}" class="call-link">{{ site.data.contact.phone }}</a>
+          </div>
+        </div>
     {% endif %}
     {% if site.data.contact.email %}
-    <div class="call-email"><strong>Email: </strong>
-      <a href="mailto:{{ .site.data.contact.email }}">
-        {{ site.data.contact.email }}
-      </a>
+    <div class="call-email">
+      <i class="fas fa-envelope call-icon"></i>
+      <div class="call-info">
+        <span class="call-label">Email</span>
+        <a href="mailto:{{ site.data.contact.email }}" class="call-link">
+          {{ site.data.contact.email }}
+        </a>
+      </div>
     </div>
     {% endif %}
   </div>
     {% if include.show_button %}
       <div class="call-box-bottom">
-        <a href="{{ site.data.contact.contact_button_link }}" class="button">Contact</a>
+        <a href="{{ site.data.contact.contact_button_link }}" class="button button-primary">CONTACT</a>
       </div>
     {% endif %}
 </div>

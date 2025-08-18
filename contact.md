@@ -1,16 +1,31 @@
 ---
-title: Contact
+title: Contacto
 layout: contact
-description: Contact
+description: Contacto
 ---
 
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae crimen habet Priamum nec.
+## ¿Listo para Potenciar Tu Operación Agrícola?
 
-| Day       | Opening Hours   |
-| --------- | --------------- |
-| Tuesday   | 8:30am - 5:00pm |
-| Wednesday | 8:30am - 5:00pm |
-| Thursday  | 8:30am - 5:00pm |
-| Friday    | 8:30am - 5:00pm |
-| Saturday  | 10:am - 4:00pm  |
-| Saturday  | Closed          |
+**Nuestros especialistas están listos para ayudarte.** Obtén asesoría personalizada, cotizaciones gratuitas y soluciones adaptadas a tus necesidades específicas.
+
+### Contáctanos Hoy
+
+**📍 Ubicación:** [Road #2 Km 85.3 Bo Carrizales Hatillo PR 00659](https://www.google.com/maps/search/?api=1&query=Road+%232+Km+85.3+Bo+Carrizales+Hatillo+PR+00659)
+
+**🕒 Horario de Atención:**
+Lunes a Viernes: 8:00 AM - 4:00 PM
+Sábados: Citas disponibles
+
+### Servicios de Emergencia
+
+**¿Equipo averiado?** Nuestro servicio de emergencia está disponible 24/7 para reparaciones críticas que no pueden esperar.
+
+### ¿Qué Podemos Hacer por Ti?
+
+✓ **Evaluación gratuita** de tus necesidades de equipos<br>
+✓ **Cotizaciones personalizadas** sin compromiso<br>
+✓ **Financiamiento pre-aprobado** en 24 horas<br>
+✓ **Servicio técnico especializado** en toda la isla<br>
+✓ **Asesoría en repuestos** y mantenimiento preventivo
+
+**Tu éxito es nuestro compromiso. Contáctanos hoy.**

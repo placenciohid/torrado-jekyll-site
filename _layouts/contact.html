@@ -6,11 +6,77 @@ bodyClass: "page-contact"
 
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
     <div class="row justify-content-start">
-        <div class="col-12 col-md-8">
-            <div class="service service-single">
+        <div class="col-12 col-lg-8">
+            <div class="page-content">
                 <h1 class="title">{{page.title}}</h1>
-                {% include call.html show_button=false %}
                 <div class="content mt-4">{{content}}</div>
+                
+                <!-- Google Maps -->
+                <div class="map-container mb-5">
+                    <h4>Nuestra Ubicación</h4>
+                    <div class="map-embed mt-3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.123456789!2d-66.803739!3d18.486817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDI5JzEyLjUiTiA2NsKwNDgnMTMuNSJX!5e0!3m2!1sen!2spr!4v1234567890123!5m2!1sen!2spr"
+                            width="100%"
+                            height="300"
+                            style="border:0; border-radius: 8px;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="mt-3">
+                        <a href="https://www.google.com/maps/search/?api=1&query=18.486817,-66.803739"
+                           target="_blank"
+                           class="btn btn-outline-primary">
+                            <i class="fas fa-map-marker-alt"></i> Ver en Google Maps
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form action="https://formspree.io/f/xpwaqjqr" method="POST" class="mt-4">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Nombre *</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="phone" name="phone">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="subject" class="form-label">Asunto *</label>
+                                <select class="form-control" id="subject" name="subject" required>
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="Ventas">Consulta de Ventas</option>
+                                    <option value="Reparacion">Servicio de Reparación</option>
+                                    <option value="Piezas">Repuestos y Piezas</option>
+                                    <option value="Financiamiento">Financiamiento</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje *</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Cuéntanos sobre tu consulta o necesidad..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 mt-5 mt-lg-0">
+            <div class="contact-info">
+                <!-- Contact Information -->
             </div>
         </div>
     </div>

@@ -1,0 +1,66 @@
+.contact-form {
+  background: $white-offset;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid darken($white-offset, 5%);
+  
+  h3 {
+    color: $primary-dark;
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-weight: 600;
+    color: $primary-dark;
+    margin-bottom: 8px;
+  }
+  
+  .form-control {
+    border: 1px solid darken($white-offset, 10%);
+    border-radius: 4px;
+    padding: 12px 15px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+    
+    &:focus {
+      border-color: $primary;
+      box-shadow: 0 0 0 0.2rem rgba($primary, 0.25);
+    }
+  }
+  
+  .btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    padding: 12px 30px;
+    font-weight: 600;
+    
+    &:hover {
+      background-color: $primary-dark;
+      border-color: $primary-dark;
+    }
+  }
+}
+
+.contact-info {
+  .map-container {
+    h4 {
+      color: $primary-dark;
+      margin-bottom: 15px;
+    }
+    
+    .map-embed {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+// Form validation styles
+.was-validated .form-control:valid {
+  border-color: #28a745;
+}
+
+.was-validated .form-control:invalid {
+  border-color: #dc3545;
+}

@@ -9,21 +9,25 @@
     justify-content: flex-start;
     > li {
       list-style: none;
-      font-size: 1rem;
+      font-size: 1.25rem;
       > a {
         padding: 10px 12px 10px 12px;
         display: inline-block;
         font-weight: normal;
         text-decoration: none;
-        color: $primary;
+        color: $white;
         &:hover {
-          text-decoration: underline;
+          text-decoration: none;
+          border-bottom: 2px solid $white;
+          transition: all 225ms ease-in 0s;
         }
       }
       &.active {
         > a {
           font-weight: bold;
           text-decoration: none;
+          color: $white;
+          border-bottom: 2px solid $white;
           &:hover {
             text-decoration: none;
             transition: all 225ms ease-in 0s;

@@ -4,27 +4,23 @@
   margin-top: -40px;
 }
 .intro-image-absolute {
-  max-width: none;
-
+  max-width: 100%;
+  height: auto;
   padding: 0;
   margin-bottom: 30px;
-  @include media-breakpoint-up(sm) {
-  }
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  
   @include media-breakpoint-up(md) {
-    position: absolute;
-    bottom: -50px;
-    left: -50px;
-    width: 700px;
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
   }
   @include media-breakpoint-up(lg) {
-    bottom: -60px;
-    left: -60px;
-    width: 800px;
+    max-width: 85%;
   }
   @include media-breakpoint-up(xl) {
-    bottom: -100px;
-    left: -70px;
-    width: 850px;
+    max-width: 80%;
   }
 }
 .intro-image-hide-mobile {

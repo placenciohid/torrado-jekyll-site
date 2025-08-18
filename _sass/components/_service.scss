@@ -1,0 +1,161 @@
+.service {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-4px);
+  }
+  
+  .service-icon {
+    text-align: center;
+    padding: 20px 20px 10px;
+    
+    i {
+      font-size: 2.5rem;
+      color: $primary;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .service-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    
+    .service-title {
+      margin-bottom: 15px;
+      font-size: 1.5rem; // Standardized to match h2 in _type.scss
+      font-weight: 600;
+      font-family: $font-family-heading;
+      line-height: 1.4;
+      
+      a {
+        color: $primary-dark;
+        text-decoration: none;
+        
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+    
+    p {
+      flex-grow: 1;
+      margin-bottom: 15px;
+      color: $steel;
+      line-height: 1.6; // Standardized to match p in _type.scss
+      font-size: 1rem; // Standardized to match p in _type.scss
+    }
+    
+    // Standardize headings within service content
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    
+    h3 {
+      font-size: 1.25rem;
+      margin-top: 25px;
+      margin-bottom: 15px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    
+    // Standardize lists within service content
+    ul, ol {
+      margin-bottom: 20px;
+      
+      li {
+        margin-bottom: 10px;
+        line-height: 1.6;
+        color: $steel;
+      }
+    }
+    
+    .btn {
+      margin-top: auto;
+      align-self: flex-start;
+    }
+  }
+}
+
+// Add frame effect only for main services page
+body.page-services .service {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Remove box styling for individual service pages
+body.page-service .service {
+  background: transparent;
+  box-shadow: none;
+  
+  &:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+.service-summary {
+  border: 1px solid $white-offset;
+  
+  &:hover {
+    border-color: $primary;
+  }
+  
+  // Ensure consistent styling in service summary
+  .service-content {
+    .service-title {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+    
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+// Ensure consistent styling in single service page
+.service-single {
+  .content {
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    
+    h3 {
+      font-size: 1.25rem;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+    
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    
+    ul, ol {
+      li {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
