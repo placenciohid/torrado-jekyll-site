@@ -1,0 +1,37 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Torrado Equipment",
+  "description": "{{ site.description | strip_html | strip_newlines | escape }}",
+  "url": "{{ site.url }}{{ site.baseurl }}",
+  "telephone": "{{ site.data.contact.phone }}",
+  "email": "{{ site.data.contact.email }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Road #2 Km 85.3 Bo Carrizales",
+    "addressLocality": "Hatillo",
+    "addressRegion": "PR",
+    "postalCode": "00659",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 18.486817,
+    "longitude": -66.803739
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "16:00"
+    }
+  ],
+  "priceRange": "$$",
+  "image": "{{ '/assets/images/company_logo/torradoequipment.png' | absolute_url }}",
+  "sameAs": [
+    "https://www.facebook.com/torradoequipment"
+  ]
+}
+</script>

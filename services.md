@@ -1,12 +1,5 @@
 ---
 title: Servicios
 layout: services
-description: Servicios
-intro_image: "assets/images/site/cows.png"
-intro_image_absolute: true
-intro_image_hide_on_mobile: true
+description: "Venta, reparación, repuestos y financiamiento de maquinaria agrícola en Puerto Rico. Servicio técnico especializado con más de 20 años de experiencia."
 ---
-
-# Nuestros Servicios
-
-Ofrecemos una amplia gama de servicios para satisfacer sus necesidades.

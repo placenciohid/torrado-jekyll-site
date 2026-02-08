@@ -15,6 +15,7 @@ gem "base64"
 gem "jekyll-feed"
 gem "jekyll-seo-tag"
 gem "jekyll-paginate"
+gem "jekyll-sitemap"
 
 # Additional plugin
 gem "jekyll-environment-variables"

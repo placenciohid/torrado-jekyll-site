@@ -1,0 +1,29 @@
+- name: "Case IH"
+  website: "https://www.caseih.com"
+
+- name: "New Holland"
+  website: "https://www.newholland.com"
+
+- name: "Kubota"
+  website: "https://www.kubota.com"
+
+- name: "Kuhn"
+  website: "https://www.kuhn.com"
+
+- name: "Vermeer"
+  website: "https://www.vermeer.com"
+
+- name: "Hustler"
+  website: "https://www.hustlerturf.com"
+
+- name: "Bush Hog"
+  website: "https://www.bushhog.com"
+
+- name: "Rhino"
+  website: "https://www.rhinoag.com"
+
+- name: "Gehl"
+  website: "https://www.gehl.com"
+
+- name: "Manitou"
+  website: "https://www.manitou.com"

@@ -18,7 +18,7 @@
       width: 100%;
       height: 200px;
       overflow: hidden;
-      
+
       img {
         width: 100%;
         height: 100%;
@@ -58,19 +58,75 @@
       }
     }
   }
+}
 
-  // Responsive adjustments
-  @media (max-width: 768px) {
-    .team-card .team-image {
-      height: 150px;
+// Enhanced team cards (used in nosotros.md)
+.team-card-enhanced {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  .team-card-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
     }
-    
-    .team-card .team-content {
-      padding: 15px;
-      
-      .team-name {
-        font-size: 18px;
-      }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+
+  .team-card-body {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  .team-card-name {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    color: $primary-dark;
+  }
+
+  .team-card-role {
+    display: inline-block;
+    background: rgba($primary, 0.1);
+    color: $primary;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+
+  .team-card-bio {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: $steel;
+
+    p {
+      margin-bottom: 8px;
+      &:last-child { margin-bottom: 0; }
     }
   }
 }

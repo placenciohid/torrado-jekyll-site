@@ -3,6 +3,7 @@ title: "Financiamiento"
 date: 2025-08-17T12:00:00+00:00
 weight: 4
 icon: "fas fa-dollar-sign"
+description: "Financiamiento flexible para equipos agrícolas con Farm Credit Express. Tasas competitivas, aprobación rápida y hasta 100% de financiamiento."
 ---
 
 ## Financiamiento Flexible para Tu Crecimiento

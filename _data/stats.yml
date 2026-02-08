@@ -1,0 +1,15 @@
+- number: "20+"
+  label: "Años de Experiencia"
+  icon: "fas fa-calendar-check"
+
+- number: "18+"
+  label: "Marcas Representadas"
+  icon: "fas fa-award"
+
+- number: "10,000+"
+  label: "Piezas en Inventario"
+  icon: "fas fa-cogs"
+
+- number: "24/7"
+  label: "Servicio de Emergencia"
+  icon: "fas fa-phone-alt"

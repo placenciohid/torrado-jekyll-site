@@ -1,19 +1,64 @@
-<div class="footer">
+<footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <div class="footer-inner">
-          <h2 class="footer-title">{{site.title}}</h2>
-          <ul>
-            {% assign footermenu = site.data.menus.footer | sort: 'weight'  %}
-            {% for item in footermenu %}
-            <li class="{% if item.url == page.url %}active{% endif %}">
-              <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
-            </li>
-            {% endfor %}
-          </ul>
+      <!-- Company Info -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="footer-brand">
+          <img src="{{ site.logo.desktop | relative_url }}" alt="{{ site.title }}" class="footer-logo" width="160" height="48" loading="lazy" />
+          <p class="footer-description">Tu socio confiable en maquinaria agrícola. Más de 20 años de experiencia en Puerto Rico.</p>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-6 col-md-3 col-lg-2 mb-4">
+        <h4 class="footer-heading">Enlaces</h4>
+        <ul class="footer-links">
+          {% assign footermenu = site.data.menus.footer | sort: 'weight' %}
+          {% for item in footermenu %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="col-6 col-md-3 col-lg-3 mb-4">
+        <h4 class="footer-heading">Servicios</h4>
+        <ul class="footer-links">
+          {% for service in site.services %}
+          <li><a href="{{ service.url | relative_url }}">{{ service.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <h4 class="footer-heading">Contacto</h4>
+        <ul class="footer-contact">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>{{ site.data.contact.address }}</span>
+          </li>
+          <li>
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:{{ site.data.contact.phone }}">{{ site.data.contact.phone }}</a>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
+          </li>
+          <li>
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/{{ site.data.contact.whatsapp }}" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </li>
+          <li>
+            <i class="fas fa-clock"></i>
+            <span>{{ site.data.contact.hours }}</span>
+          </li>
+        </ul>
+        <div class="footer-social">
+          {% include social.html %}
         </div>
       </div>
     </div>
   </div>
-</div>
+</footer>

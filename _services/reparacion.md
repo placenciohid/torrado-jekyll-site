@@ -3,6 +3,7 @@ title: "Reparación"
 date: 2025-08-17T12:00:00+00:00
 weight: 2
 icon: "fas fa-wrench"
+description: "Servicio técnico especializado para maquinaria agrícola. Diagnóstico computarizado, reparaciones en taller y campo, servicio de emergencia 24/7."
 ---
 
 ## Servicio Técnico Especializado

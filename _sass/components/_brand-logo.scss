@@ -4,12 +4,16 @@
   justify-content: center;
   height: 80px;
   padding: 10px;
-  transition: transform 0.2s ease;
-  
+  transition: transform 0.2s ease, filter 0.3s ease;
+  filter: grayscale(100%);
+  opacity: 0.7;
+
   &:hover {
     transform: translateY(-2px);
+    filter: grayscale(0%);
+    opacity: 1;
   }
-  
+
   img {
     max-width: 100%;
     max-height: 60px;
@@ -19,7 +23,87 @@
   }
 }
 
-// Improve brand section spacing
-.strip .brand-logo {
-  margin-bottom: 20px;
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-items: center;
+  justify-items: center;
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+  }
+
+  .brand-logo-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// Brands showcase page (marcas.md)
+.brands-showcase {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.brand-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px 16px 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+
+    .brand-card-logo {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+  }
+
+  .brand-card-logo {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+
+    img {
+      max-width: 100%;
+      max-height: 60px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .brand-card-name {
+    font-size: 0.8rem;
+    color: $steel;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
 }

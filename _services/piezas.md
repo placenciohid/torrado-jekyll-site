@@ -3,6 +3,7 @@ title: "Piezas"
 date: 2025-08-17T12:00:00+00:00
 weight: 3
 icon: "fas fa-cogs"
+description: "Repuestos originales y compatibles para maquinaria agrícola. Más de 10,000 piezas en inventario con entrega rápida en Puerto Rico."
 ---
 
 ## Repuestos Originales y Compatibles

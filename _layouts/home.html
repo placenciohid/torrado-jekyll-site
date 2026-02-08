@@ -3,37 +3,37 @@ layout: default
 bodyClass: "page-home"
 ---
 
-<div class="intro">
-  <div class="container">
-    <!-- Text content at the top -->
-    <div class="row justify-content-start">
-      <div class="col-12">
-        {{ content }}
-      </div>
-    </div>
-    
-    <!-- Image and contact information side by side below -->
-    <div class="row justify-content-center mt-5">
-      {% if page.intro_image %}
-      <div class="col-12 col-md-6 mb-4 mb-md-0">
-        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
-      </div>
-      {% endif %}
-      
-      <div class="col-12 col-md-6">
-        {% include call.html show_button=true %}
-      </div>
+{% comment %} Hero Section {% endcomment %}
+<section class="hero" style="background-image: url('{{ page.intro_image | relative_url }}');">
+  <div class="hero-content">
+    <h1 class="hero-title">Potencia Tu Operación Agrícola</h1>
+    <p class="hero-subtitle">Más de 20 años de experiencia respaldando el éxito de agricultores en Puerto Rico. Equipos de calidad, reparaciones expertas y financiamiento flexible.</p>
+    <div class="hero-buttons">
+      <a href="{{ '/services/' | relative_url }}" class="button button-white">Ver Equipos</a>
+      <a href="tel:{{ site.data.contact.phone }}" class="button button-outline">
+        <i class="fas fa-phone-alt"></i>&nbsp; Llama Ahora
+      </a>
     </div>
   </div>
-</div>
+</section>
 
-<div class="strip">
-  <div class="container pt-4 pb-4 pb-md-6">
-    <div class="row justify-content-start">
+{% comment %} Stats/Trust Bar {% endcomment %}
+{% include stats-bar.html %}
+
+{% comment %} Services Section {% endcomment %}
+<section class="strip">
+  <div class="container pt-6 pb-6">
+    <div class="row justify-content-center mb-5">
+      <div class="col-12 col-md-8 text-center">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <p class="section-subtitle">Soluciones completas para tu operación agrícola.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
       {% assign limit = site.home.limit_services | default: 6 %}
       {% for service in site.services limit: limit %}
-      <div class="col-12 col-md-6 col-lg-3 mb-4">
-        <div class="service service-summary">
+      <div class="col-12 col-md-6 mb-4">
+        <div class="service service-summary animate-on-scroll">
           <div class="service-icon">
             {% if service.icon %}
               <i class="{{ service.icon }}"></i>
@@ -42,63 +42,48 @@ bodyClass: "page-home"
             {% endif %}
           </div>
           <div class="service-content">
-            <h2 class="service-title">
+            <h3 class="service-title">
               <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
-            </h2>
-            <p>{{ service.excerpt | markdownify | strip_html | truncate: 80 }}</p>
-            <a href="{{ service.url | relative_url }}" class="btn btn-outline-primary btn-sm">Más información</a>
+            </h3>
+            <p>{{ service.excerpt | markdownify | strip_html | truncate: 120 }}</p>
+            <a href="{{ service.url | relative_url }}" class="button button-primary btn-sm">Más información</a>
           </div>
         </div>
       </div>
       {% endfor %}
     </div>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mt-3">
       <div class="col-auto">
-        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Services</a>
+        <a class="button button-primary" href="{{ '/services/' | relative_url }}">Ver Todos los Servicios</a>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="strip">
-  <div class="container pt-4 pb-4 pb-md-6">
-    <div class="row justify-content-center">
+{% comment %} Brands Section {% endcomment %}
+<section class="strip strip-grey">
+  <div class="container pt-6 pb-6">
+    <div class="row justify-content-center mb-4">
       <div class="col-12 col-md-8 text-center">
-        <h2 class="title-3">Marcas que representamos</h2>
-        <p class="lead">Nos enorgullece asociarnos con las mejores marcas del mercado.</p>
+        <h2 class="section-title">Marcas que Representamos</h2>
+        <p class="section-subtitle">Nos enorgullece asociarnos con las mejores marcas del mercado.</p>
       </div>
     </div>
-    <div class="row">
+    <div class="brands-grid">
       {% assign brand_images = site.static_files | where_exp: "item", "item.path contains 'assets/images/brands'" %}
       {% for brand_image in brand_images %}
-        <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex justify-content-center align-items-center">
+        <div class="brand-logo-item animate-on-scroll">
           <div class="brand-logo">
-            <img alt="{{ brand_image.name | split: '.' | first }}" src="{{ brand_image.path | relative_url }}" />
+            <img alt="{{ brand_image.name | split: '.' | first }}" src="{{ brand_image.path | relative_url }}" loading="lazy" />
           </div>
         </div>
       {% endfor %}
     </div>
   </div>
-</div>
+</section>
 
-{% if site.data.features %}
-<div class="strip strip-grey">
-  <div class="container pt-4 pb-4 pt-md-6 pb-md-6">
-    <div class="row justify-content-center">
+{% comment %} Testimonials Section {% endcomment %}
+{% include testimonials.html %}
 
-      {% for feature in site.data.features %}
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          {% if feature.image %}
-          <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" /></div>
-          {% endif %}
-          <h2 class="feature-title">{{ feature.title }}</h2>
-          <div class="feature-content">{{ feature.description }}</div>
-        </div>
-      </div>
-      {% endfor %}
-
-    </div>
-  </div>
-</div>
-{% endif %}
+{% comment %} CTA Banner {% endcomment %}
+{% include cta-banner.html %}

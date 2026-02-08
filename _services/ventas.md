@@ -3,6 +3,7 @@ title: "Ventas"
 date: 2025-08-17T12:00:00+00:00
 weight: 1
 icon: "fas fa-tractor"
+description: "Venta de maquinaria agrícola nueva y usada certificada en Puerto Rico. Tractores, implementos, equipos de riego y más de las mejores marcas."
 ---
 
 ## Equipos Agrícolas de Primera Calidad

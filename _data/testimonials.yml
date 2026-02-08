@@ -1,0 +1,14 @@
+- name: "Carlos Rivera"
+  location: "Arecibo, PR"
+  rating: 5
+  text: "Torrado Equipment nos ha atendido por más de 10 años. Su servicio técnico es rápido y confiable. Cuando necesitamos una pieza urgente, siempre la consiguen."
+
+- name: "Miguel Rodríguez"
+  location: "Manatí, PR"
+  rating: 5
+  text: "Compramos nuestro primer tractor con ellos y el proceso de financiamiento fue sencillo. El equipo de Berto te guía en cada paso. Recomendados al 100%."
+
+- name: "José Meléndez"
+  location: "Lares, PR"
+  rating: 5
+  text: "El servicio de emergencia 24/7 nos salvó en plena cosecha. Llegaron el mismo día y resolvieron el problema. Eso no tiene precio para un agricultor."

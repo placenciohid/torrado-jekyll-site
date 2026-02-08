@@ -4,24 +4,50 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // box-shadow: 0 1px 15px rgba(50, 50, 93, 0.2);
-  border-bottom: 1px solid $white-offset;
-  padding: 10px 0px;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &.header-absolute {
-    position: absolute;
-    z-index: 10;
-    width: 100%;
+
+  // Scrolled state - add shadow
+  &.header-scrolled {
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  // Homepage transparent header
+  &.header-transparent {
+    background-color: transparent;
+
+    &.header-scrolled {
+      background-color: $primary;
+    }
   }
 }
+
+// Add padding to wrapper to compensate for fixed header
+#wrapper {
+  padding-top: 74px; // header height approx
+}
+
+// Homepage: no padding since hero goes behind header
+.page-home #wrapper {
+  padding-top: 0;
+}
+
 .lock-scroll {
+  overflow: hidden;
   .header {
-    &.header-absolute {
-      position: static;
+    &.header-transparent {
+      background-color: $primary;
     }
   }
 }

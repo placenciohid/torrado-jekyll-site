@@ -1,7 +1,17 @@
 [
   {
-      "name": "Email",
-      "link": "mailto:capagro_pr@yahoo.com",
-      "image": "images/social/email.svg"
+    "name": "Facebook",
+    "link": "https://www.facebook.com/torradoequipment",
+    "icon": "fab fa-facebook-f"
+  },
+  {
+    "name": "WhatsApp",
+    "link": "https://wa.me/17876074304",
+    "icon": "fab fa-whatsapp"
+  },
+  {
+    "name": "Email",
+    "link": "mailto:capagro_pr@yahoo.com",
+    "icon": "fas fa-envelope"
   }
 ]

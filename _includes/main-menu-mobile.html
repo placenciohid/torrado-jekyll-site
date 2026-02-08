@@ -1,5 +1,5 @@
 <div id="main-menu-mobile" class="main-menu-mobile">
-  {% assign mainmenu = site.data.menus.main | sort: 'weight'  %}
+  {% assign mainmenu = site.data.menus.main | sort: 'weight' %}
   <ul>
     {% for item in mainmenu %}
     <li class="{% if item.url == page.url %}active{% endif %}">
@@ -7,4 +7,12 @@
     </li>
     {% endfor %}
   </ul>
+  <div class="mobile-menu-contact">
+    <a href="tel:{{ site.data.contact.phone }}" class="mobile-contact-item">
+      <i class="fas fa-phone-alt"></i> {{ site.data.contact.phone }}
+    </a>
+    <a href="https://wa.me/{{ site.data.contact.whatsapp }}" target="_blank" rel="noopener noreferrer" class="mobile-contact-item mobile-whatsapp">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+  </div>
 </div>

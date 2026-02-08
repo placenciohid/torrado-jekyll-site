@@ -1,13 +1,147 @@
+// Shared service hero for both single and listing pages
+.service-hero {
+  background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
+  padding: 40px 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 50px 0;
+  }
+
+  .service-hero-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .service-hero-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    i {
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  }
+
+  .service-hero-title {
+    color: #fff;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    @include media-breakpoint-up(md) {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+// Single service page specific styles
 .page-service {
-  .content {
-    > p {
-      &:first-of-type {
-        font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 40px;
-        font-weight: regular;
-        color: rgb(104, 104, 104);
+  .service-sidebar {
+    position: sticky;
+    top: 100px;
+  }
+
+  .sidebar-card {
+    background: $white-offset;
+    border-radius: 10px;
+    padding: 28px;
+    margin-bottom: 20px;
+
+    h3 {
+      font-size: 1.15rem;
+      color: $primary-dark;
+      margin: 0 0 12px 0;
+      font-weight: 600;
+
+      i {
+        margin-right: 8px;
       }
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: $steel;
+      margin-bottom: 16px;
+    }
+  }
+
+  .sidebar-cta {
+    background: linear-gradient(135deg, $white-offset, #e8f5e3);
+    border: 1px solid rgba($primary, 0.1);
+
+    .sidebar-btn {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 14px;
+      height: 42px;
+      line-height: 42px;
+      border-radius: 6px;
+      width: 100%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .button-whatsapp {
+      background: #25D366;
+      color: #fff;
+
+      &:hover {
+        background: darken(#25D366, 8%);
+        color: #fff;
+      }
+    }
+  }
+
+  .sidebar-services {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0 0 8px 0;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 14px;
+        border-radius: 6px;
+        color: $black;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background: rgba($primary, 0.08);
+          color: $primary;
+          padding-left: 18px;
+        }
+
+        i {
+          color: $primary;
+          width: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .content {
+    > p:first-of-type {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 30px;
+      color: rgb(104, 104, 104);
     }
   }
 }

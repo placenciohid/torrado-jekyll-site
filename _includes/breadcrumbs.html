@@ -1,0 +1,13 @@
+{% unless page.layout == 'home' %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+      {% if page.collection == 'services' %}
+      <li><a href="{{ '/services/' | relative_url }}">Servicios</a></li>
+      {% endif %}
+      <li aria-current="page">{{ page.title }}</li>
+    </ol>
+  </div>
+</nav>
+{% endunless %}

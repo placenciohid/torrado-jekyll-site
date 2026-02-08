@@ -1,0 +1,17 @@
+<section class="stats-bar">
+  <div class="container">
+    <div class="row">
+      {% for stat in site.data.stats %}
+      <div class="col-6 col-md-3">
+        <div class="stat-item animate-on-scroll">
+          <div class="stat-icon">
+            <i class="{{ stat.icon }}"></i>
+          </div>
+          <div class="stat-number" data-target="{{ stat.number }}">{{ stat.number }}</div>
+          <div class="stat-label">{{ stat.label }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -3,12 +3,58 @@ layout: default
 bodyClass: "page-service"
 ---
 
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
+{% include breadcrumbs.html %}
+
+<div class="service-hero">
+  <div class="container">
+    <div class="service-hero-content">
+      {% if page.icon %}
+      <div class="service-hero-icon">
+        <i class="{{ page.icon }}"></i>
+      </div>
+      {% endif %}
+      <h1 class="service-hero-title">{{ page.title }}</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6 pt-6">
+  <div class="row">
+    <div class="col-12 col-lg-7">
       <div class="service service-single">
-        <h1 class="title">{{page.title}}</h1>
-        <div class="content">{{content}}</div>
+        <div class="content">{{ content }}</div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-5 mt-5 mt-lg-0">
+      <div class="service-sidebar">
+        <!-- Contact CTA -->
+        <div class="sidebar-card sidebar-cta">
+          <h3><i class="fas fa-headset"></i> ¿Necesitas ayuda?</h3>
+          <p>Nuestros especialistas están listos para asesorarte.</p>
+          <a href="tel:{{ site.data.contact.phone }}" class="button button-primary sidebar-btn">
+            <i class="fas fa-phone-alt"></i> Llamar Ahora
+          </a>
+          <a href="https://wa.me/{{ site.data.contact.whatsapp }}" target="_blank" rel="noopener noreferrer" class="button button-whatsapp sidebar-btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+
+        <!-- Related Services -->
+        <div class="sidebar-card">
+          <h3>Otros Servicios</h3>
+          <ul class="sidebar-services">
+            {% for service in site.services %}
+            {% unless service.url == page.url %}
+            <li>
+              <a href="{{ service.url | relative_url }}">
+                <i class="{{ service.icon }}"></i>
+                <span>{{ service.title }}</span>
+              </a>
+            </li>
+            {% endunless %}
+            {% endfor %}
+          </ul>
+        </div>
       </div>
     </div>
   </div>

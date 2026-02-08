@@ -1,0 +1,31 @@
+<section class="testimonials-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-12 col-md-8 text-center">
+        <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+        <p class="section-subtitle">La confianza de nuestros clientes es nuestro mejor respaldo.</p>
+      </div>
+    </div>
+    <div class="row">
+      {% for testimonial in site.data.testimonials %}
+      <div class="col-12 col-md-4 mb-4">
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-quote">
+            <i class="fas fa-quote-left"></i>
+          </div>
+          <p class="testimonial-text">{{ testimonial.text }}</p>
+          <div class="testimonial-stars">
+            {% for i in (1..testimonial.rating) %}
+            <i class="fas fa-star"></i>
+            {% endfor %}
+          </div>
+          <div class="testimonial-author">
+            <strong>{{ testimonial.name }}</strong>
+            <span>{{ testimonial.location }}</span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
