@@ -14,16 +14,13 @@ description: "Representamos las mejores marcas de maquinaria agrícola: Case IH,
   </p>
 </div>
 
-<div class="brands-showcase">
+<div class="brands-showcase" style="grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));">
   {% assign brand_images = site.static_files | where_exp: "item", "item.path contains 'assets/images/brands'" %}
   {% for brand_image in brand_images %}
-    {% assign brand_name = brand_image.name | split: '.' | first %}
-    {% assign clean_name = brand_name | replace: '-', ' ' | replace: '_', ' ' | replace: 'logo', '' | replace: 'copy', '' | replace: 'images', '' | replace: '(', '' | replace: ')', '' | replace: '1', '' | replace: '2', '' | replace: '3', '' | replace: '4', '' | replace: '5', '' | replace: '__', '' %}
-    <div class="brand-card animate-on-scroll">
-      <div class="brand-card-logo">
-        <img alt="{{ clean_name }}" src="{{ brand_image.path | relative_url }}" loading="lazy" />
+    <div class="brand-card" style="padding: var(--space-6);">
+      <div class="brand-card-logo" style="height: 100px;">
+        <img alt="{{ brand_image.name | split: '.' | first }}" src="{{ brand_image.path | relative_url }}" loading="lazy" style="filter: none;" />
       </div>
-      <span class="brand-card-name">{{ clean_name }}</span>
     </div>
   {% endfor %}
 </div>
@@ -55,7 +52,7 @@ description: "Representamos las mejores marcas de maquinaria agrícola: Case IH,
       </div>
       <div>
         <h4 style="margin-bottom: var(--space-2);">Soporte Técnico</h4>
-        <p style="color: var(--color-text-light); margin: 0;">Disponibilidad de repuestos</p>
+        <p style="color: var(--color-text-light); margin: 0;">Disponibilidad de repuestos garantizada</p>
       </div>
     </div>
     <div style="display: flex; align-items: flex-start; gap: var(--space-4);">
@@ -64,7 +61,7 @@ description: "Representamos las mejores marcas de maquinaria agrícola: Case IH,
       </div>
       <div>
         <h4 style="margin-bottom: var(--space-2);">Valor de Reventa</h4>
-        <p style="color: var(--color-text-light); margin: 0;">Protege tu inversión</p>
+        <p style="color: var(--color-text-light); margin: 0;">Protege tu inversión a largo plazo</p>
       </div>
     </div>
   </div>
