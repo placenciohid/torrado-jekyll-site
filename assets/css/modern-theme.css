@@ -1186,10 +1186,147 @@ p {
   animation: fadeInUp 0.6s ease forwards;
 }
 
+/* ==========================================================================
+   BRANDS SHOWCASE - Marcas Page
+   ========================================================================== */
+.brands-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-10);
+}
+
+.brand-card {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8) var(--space-6);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  border: 1px solid var(--color-border);
+}
+
+.brand-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--color-primary-light);
+}
+
+.brand-card-logo {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+}
+
+.brand-card-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(20%);
+  transition: filter var(--transition-base);
+}
+
+.brand-card:hover .brand-card-logo img {
+  filter: grayscale(0%);
+}
+
+.brand-card-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-gray-600);
+  text-align: center;
+  text-transform: capitalize;
+  word-break: break-word;
+}
+
+/* ==========================================================================
+   GALLERY MASONRY - Galería Page
+   ========================================================================== */
+.gallery-masonry {
+  column-count: 3;
+  column-gap: var(--space-4);
+}
+
+.gallery-masonry .gallery-item {
+  break-inside: avoid;
+  margin-bottom: var(--space-4);
+  display: block;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  cursor: zoom-in;
+}
+
+.gallery-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-masonry .gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.gallery-masonry .gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-masonry .gallery-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.gallery-masonry .gallery-item:hover::after {
+  opacity: 1;
+}
+
+/* Responsive Gallery */
+@media (max-width: 1024px) {
+  .gallery-masonry {
+    column-count: 2;
+  }
+  
+  .brands-showcase {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-masonry {
+    column-count: 1;
+  }
+  
+  .brands-showcase {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+  
+  .brand-card {
+    padding: var(--space-6) var(--space-4);
+  }
+  
+  .brand-card-logo {
+    height: 80px;
+  }
+}
+
 /* Utility Classes */
 .text-center { text-align: center; }
 .text-white { color: var(--color-white); }
 .mt-4 { margin-top: var(--space-4); }
+.mt-5 { margin-top: var(--space-10); }
 .mt-8 { margin-top: var(--space-8); }
 .mb-4 { margin-bottom: var(--space-4); }
 .mb-8 { margin-bottom: var(--space-8); }

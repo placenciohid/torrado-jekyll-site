@@ -5,7 +5,8 @@ layout: modern-default
 <!-- Page Header -->
 <section class="page-header">
   <div class="container">
-    <h1>{{ page.title }}</h1>
+    <span class="section-label" style="color: var(--color-accent); margin-bottom: var(--space-4); display: inline-block;">{{ page.title }}</span>
+    <h1>{% if page.header_title %}{{ page.header_title }}{% else %}{{ page.title }}{% endif %}</h1>
     {% if page.description %}
     <p>{{ page.description }}</p>
     {% endif %}
@@ -15,8 +16,31 @@ layout: modern-default
 <!-- Content -->
 <section class="content-wrapper">
   <div class="container">
-    <div class="content-body">
+    <div class="content-body" style="max-width: 100%;">
       {{ content }}
     </div>
   </div>
 </section>
+
+{% if page.title == "Marcas" or page.title == "Galería" %}
+<!-- CTA Section for specific pages -->
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="cta-box">
+      <h2>¿Listo para Potenciar Tu Operación?</h2>
+      <p>
+        Contáctanos hoy para una cotización gratuita. Nuestros expertos están listos 
+        para ayudarte a encontrar las mejores soluciones para tu finca.
+      </p>
+      <div class="hero-buttons" style="justify-content: center;">
+        <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-lg">
+          <i class="fas fa-envelope"></i> Solicitar Cotización
+        </a>
+        <a href="tel:{{ site.data.contact.phone }}" class="btn btn-outline btn-lg">
+          <i class="fas fa-phone-alt"></i> {{ site.data.contact.phone }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
