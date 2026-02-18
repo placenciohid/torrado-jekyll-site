@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/modern-theme.css' | relative_url }}">
+  
+  {% if page.glightbox %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  {% endif %}
+  
+  <!-- Meta -->
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+  <meta property="og:description" content="{{ page.description }}">
+  {% endif %}
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta name="twitter:card" content="summary">
+  
+  <link rel="icon" type="image/png" href="{{ '/images/favicon-32x32.svg' | relative_url }}">
+  
+  {% include schema.html %}
+</head>
+<body class="{{ page.bodyClass }}">
+  
+  <!-- Header -->
+  <header class="modern-header" id="header">
+    <div class="container">
+      <a href="{{ '/' | relative_url }}" class="logo">
+        <img src="{{ site.logo.desktop | relative_url }}" alt="{{ site.title }}" height="50">
+      </a>
+      
+      <nav class="modern-nav">
+        <a href="{{ '/' | relative_url }}">Inicio</a>
+        <a href="{{ '/about/' | relative_url }}">Nosotros</a>
+        <a href="{{ '/services/' | relative_url }}">Servicios</a>
+        <a href="{{ '/marcas/' | relative_url }}">Marcas</a>
+        <a href="{{ '/galeria/' | relative_url }}">Galería</a>
+        <a href="{{ '/team/' | relative_url }}">Equipo</a>
+        <a href="{{ '/contact/' | relative_url }}" class="btn-primary">Contáctanos</a>
+      </nav>
+      
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="{{ '/' | relative_url }}">Inicio</a>
+    <a href="{{ '/about/' | relative_url }}">Nosotros</a>
+    <a href="{{ '/services/' | relative_url }}">Servicios</a>
+    <a href="{{ '/marcas/' | relative_url }}">Marcas</a>
+    <a href="{{ '/galeria/' | relative_url }}">Galería</a>
+    <a href="{{ '/team/' | relative_url }}">Equipo</a>
+    <a href="{{ '/contact/' | relative_url }}">Contáctanos</a>
+  </nav>
+  
+  <!-- Main Content -->
+  <main>
+    {{ content }}
+  </main>
+  
+  <!-- Footer -->
+  <footer class="modern-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="{{ '/' | relative_url }}" class="logo">
+            <img src="{{ site.logo.desktop | relative_url }}" alt="{{ site.title }}" height="50">
+          </a>
+          <p>{{ site.description }}</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Enlaces</h4>
+          <ul>
+            <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+            <li><a href="{{ '/about/' | relative_url }}">Nosotros</a></li>
+            <li><a href="{{ '/services/' | relative_url }}">Servicios</a></li>
+            <li><a href="{{ '/team/' | relative_url }}">Equipo</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Servicios</h4>
+          <ul>
+            {% for service in site.services limit:4 %}
+            <li><a href="{{ service.url | relative_url }}">{{ service.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Contacto</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Hatillo, Puerto Rico</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>{{ site.data.contact.phone }}</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>{{ site.email }}</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-clock"></i>
+            <span>Lun-Vie: 8:00 AM - 5:00 PM</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Todos los derechos reservados.</p>
+        <p>Hecho con <i class="fas fa-heart" style="color: #e74c3c;"></i> en Puerto Rico</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/{{ site.data.contact.phone | replace: '-', '' | replace: ' ', '' }}" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  
+  <!-- Scripts -->
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+    
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+      });
+    });
+  </script>
+  
+  {% if page.glightbox %}
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>const lightbox = GLightbox({ selector: '.glightbox' });</script>
+  {% endif %}
+  
+  {% include google-analytics.html %}
+</body>
+</html>

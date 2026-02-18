@@ -1,0 +1,45 @@
+---
+layout: modern-default
+---
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}
+    <p>{{ page.description }}</p>
+    {% endif %}
+  </div>
+</section>
+
+<!-- Team Content -->
+<section class="content-wrapper">
+  <div class="container">
+    <div class="content-body" style="text-align: center; max-width: 800px; margin: 0 auto var(--space-16);">
+      {{ content }}
+    </div>
+    
+    <!-- Team Grid -->
+    <div class="team-grid">
+      {% assign team_members = site.team | sort: 'weight' %}
+      {% for member in team_members %}
+      <div class="team-card">
+        {% if member.image %}
+        <div class="team-card-image">
+          <img src="{{ member.image | relative_url }}" alt="{{ member.title }}">
+        </div>
+        {% endif %}
+        <div class="team-card-body">
+          <h3>{{ member.title }}</h3>
+          <p class="role">{{ member.jobtitle }}</p>
+          {% if member.content != "" %}
+          <div style="margin-top: var(--space-4); color: var(--color-text-light); font-size: 0.9375rem;">
+            {{ member.content }}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

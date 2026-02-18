@@ -1,0 +1,53 @@
+---
+layout: modern-default
+---
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}
+    <p>{{ page.description }}</p>
+    {% endif %}
+  </div>
+</section>
+
+<!-- Services Grid -->
+<section class="section">
+  <div class="container">
+    <div class="services-grid">
+      {% for service in site.services %}
+      <div class="service-card">
+        <div class="service-icon">
+          {% if service.icon %}
+            <i class="{{ service.icon }}"></i>
+          {% else %}
+            <i class="fas fa-cog"></i>
+          {% endif %}
+        </div>
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+        <a href="{{ service.url | relative_url }}" class="service-link">
+          Ver detalles <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section section-alt" style="padding-top: 0;">
+  <div class="container">
+    <div class="cta-box">
+      <h2>¿Necesitas Ayuda para Elegir?</h2>
+      <p>
+        Nuestros especialistas te guiarán para encontrar la solución perfecta 
+        para tu operación agrícola. Cotización gratuita y sin compromiso.
+      </p>
+      <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-lg">
+        Hablar con un Especialista
+      </a>
+    </div>
+  </div>
+</section>

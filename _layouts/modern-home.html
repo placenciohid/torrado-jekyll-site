@@ -1,0 +1,234 @@
+---
+layout: modern-default
+---
+
+<!-- Hero Section -->
+<section class="modern-hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-star"></i>
+          <span>Más de 20 años de experiencia</span>
+        </div>
+        <h1 class="hero-title">
+          Potencia Tu <span>Operación</span> Agrícola
+        </h1>
+        <p class="hero-description">
+          Más de dos décadas respaldando el éxito de agricultores en Puerto Rico. 
+          Equipos de calidad, reparaciones expertas y financiamiento flexible para 
+          llevar tu finca al siguiente nivel.
+        </p>
+        <div class="hero-buttons">
+          <a href="{{ '/services/' | relative_url }}" class="btn btn-primary btn-lg">
+            <i class="fas fa-tractor"></i>
+            Ver Equipos
+          </a>
+          <a href="tel:{{ site.data.contact.phone }}" class="btn btn-outline btn-lg">
+            <i class="fas fa-phone-alt"></i>
+            Llama Ahora
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img src="{{ page.intro_image | relative_url }}" alt="Maquinaria Agrícola Torrado Equipment">
+        </div>
+        <div class="hero-stats-card">
+          <div class="stat-item">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Años Exp.</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1000+</span>
+            <span class="stat-label">Clientes</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Soporte</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Bar -->
+<section class="section section-alt" style="padding: var(--space-12) 0;">
+  <div class="container">
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fas fa-award"></i>
+        </div>
+        <h4>Calidad Garantizada</h4>
+        <p>Equipos certificados de las mejores marcas</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fas fa-tools"></i>
+        </div>
+        <h4>Servicio Técnico</h4>
+        <p>Técnicos especializados disponibles</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fas fa-percentage"></i>
+        </div>
+        <h4>Financiamiento</h4>
+        <p>Opciones flexibles para tu inversión</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fas fa-shipping-fast"></i>
+        </div>
+        <h4>Entrega Rápida</h4>
+        <p>Servicio en toda la isla</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Nuestros Servicios</span>
+      <h2 class="section-title">Soluciones Completas para Tu Finca</h2>
+      <p class="section-description">
+        Ofrecemos todo lo que necesitas para mantener tu operación agrícola funcionando al máximo rendimiento.
+      </p>
+    </div>
+    
+    <div class="services-grid">
+      {% for service in site.services limit:4 %}
+      <div class="service-card">
+        <div class="service-icon">
+          {% if service.icon %}
+            <i class="{{ service.icon }}"></i>
+          {% else %}
+            <i class="fas fa-cog"></i>
+          {% endif %}
+        </div>
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description | truncate: 120 }}</p>
+        <a href="{{ service.url | relative_url }}" class="service-link">
+          Más información <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    
+    <div class="text-center mt-8">
+      <a href="{{ '/services/' | relative_url }}" class="btn btn-primary">
+        Ver Todos los Servicios <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Brands Section -->
+<section class="brands-section">
+  <div class="container">
+    <div class="brands-header">
+      <span class="section-label" style="color: var(--color-accent);">Marcas</span>
+      <h2>Representamos las Mejores Marcas</h2>
+      <p>Equipos de calidad respaldados por garantía y soporte técnico especializado</p>
+    </div>
+  </div>
+  
+  <div class="brands-marquee">
+    <div class="brands-track">
+      {% assign brand_images = site.static_files | where_exp: "item", "item.path contains 'assets/images/brands'" %}
+      {% for brand_image in brand_images %}
+      <div class="brand-item">
+        <img src="{{ brand_image.path | relative_url }}" alt="{{ brand_image.name | split: '.' | first }}">
+      </div>
+      {% endfor %}
+      <!-- Duplicate for seamless loop -->
+      {% for brand_image in brand_images %}
+      <div class="brand-item">
+        <img src="{{ brand_image.path | relative_url }}" alt="{{ brand_image.name | split: '.' | first }}">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label" style="color: var(--color-accent);">Testimonios</span>
+      <h2 class="section-title" style="color: var(--color-white);">Lo Que Dicen Nuestros Clientes</h2>
+    </div>
+    
+    <div class="services-grid" style="margin-top: var(--space-12);">
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "Excelente servicio y atención. Me ayudaron a encontrar el tractor perfecto para mi finca 
+          y el financiamiento fue muy fácil de obtener. Totalmente recomendados."
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">JM</div>
+          <div class="testimonial-info">
+            <h5>José Martinez</h5>
+            <span>Agricultor - Arecibo</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "El servicio de reparación es excepcional. Mi equipo quedó como nuevo y el tiempo 
+          de respuesta fue increíble. Son mi proveedor de confianza."
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">CR</div>
+          <div class="testimonial-info">
+            <h5>Carlos Rivera</h5>
+            <span>Productor Lácteo - Hatillo</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "Llevo más de 10 años comprando con ellos. La calidad de sus equipos y el soporte 
+          post-venta es incomparable. Son parte de mi éxito."
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">AL</div>
+          <div class="testimonial-info">
+            <h5>Ana López</h5>
+            <span>Dueña de Finca - Camuy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>¿Listo para Potenciar Tu Finca?</h2>
+      <p>
+        Contáctanos hoy para una cotización gratuita. Nuestros expertos están listos 
+        para ayudarte a encontrar las mejores soluciones para tu operación agrícola.
+      </p>
+      <div class="hero-buttons" style="justify-content: center;">
+        <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-lg">
+          <i class="fas fa-envelope"></i>
+          Solicitar Cotización
+        </a>
+        <a href="tel:{{ site.data.contact.phone }}" class="btn btn-outline btn-lg">
+          <i class="fas fa-phone-alt"></i>
+          {{ site.data.contact.phone }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

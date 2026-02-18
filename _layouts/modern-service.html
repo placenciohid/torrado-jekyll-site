@@ -1,0 +1,59 @@
+---
+layout: modern-default
+---
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="container">
+    <div class="service-icon" style="margin: 0 auto var(--space-6); width: 80px; height: 80px;">
+      {% if page.icon %}
+        <i class="{{ page.icon }}" style="font-size: 2.5rem;"></i>
+      {% else %}
+        <i class="fas fa-cog" style="font-size: 2.5rem;"></i>
+      {% endif %}
+    </div>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}
+    <p>{{ page.description }}</p>
+    {% endif %}
+  </div>
+</section>
+
+<!-- Service Content -->
+<section class="content-wrapper">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="content-body">
+        {{ content }}
+        
+        <div class="mt-8">
+          <a href="{{ '/services/' | relative_url }}" class="btn btn-outline" style="color: var(--color-primary); border-color: var(--color-primary);">
+            <i class="fas fa-arrow-left"></i> Volver a Servicios
+          </a>
+        </div>
+      </div>
+      
+      <div>
+        <div class="contact-info-card">
+          <h3><i class="fas fa-phone"></i> ¿Necesitas Ayuda?</h3>
+          <p style="margin-bottom: var(--space-4);">
+            Habla con nuestros especialistas para más información sobre este servicio.
+          </p>
+          <a href="tel:{{ site.data.contact.phone }}" class="btn btn-primary" style="width: 100%;">
+            <i class="fas fa-phone-alt"></i> Llamar Ahora
+          </a>
+        </div>
+        
+        <div class="contact-info-card">
+          <h3><i class="fas fa-whatsapp"></i> WhatsApp</h3>
+          <p style="margin-bottom: var(--space-4);">
+            Escríbenos por WhatsApp para una respuesta rápida.
+          </p>
+          <a href="https://wa.me/{{ site.data.contact.phone | replace: '-', '' | replace: ' ', '' }}" class="btn btn-outline" style="width: 100%; color: #25d366; border-color: #25d366;" target="_blank">
+            <i class="fab fa-whatsapp"></i> Enviar Mensaje
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

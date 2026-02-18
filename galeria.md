@@ -1,6 +1,6 @@
 ---
 title: Galería
-layout: page
+layout: modern-page
 description: "Galería de equipos agrícolas disponibles en Torrado Equipment. Tractores, implementos y maquinaria para tu operación en Puerto Rico."
 glightbox: true
 ---

@@ -28,12 +28,12 @@ defaults:
       path: ""
       type: "services"
     values:
-      layout: "service"
+      layout: "modern-service"
   - scope:
       path: ""
       type: "team"
     values:
-      layout: "team"
+      layout: "modern-team"
 
 sass:
   style: compressed # possible values: nested expanded compact compressed

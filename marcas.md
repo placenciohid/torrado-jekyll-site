@@ -1,6 +1,6 @@
 ---
 title: Marcas
-layout: page
+layout: modern-page
 description: "Representamos las mejores marcas de maquinaria agrícola: Case IH, New Holland, Kubota y más. Equipos de calidad con soporte técnico en Puerto Rico."
 ---
 

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:agriculture.newholland.com)",
+      "WebFetch(domain:www.gartontractor.com)",
+      "Bash(bundle exec jekyll build:*)",
+      "Bash(bundle install:*)",
+      "Bash(dir:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nComplete site redesign: modern homepage, sticky nav, WhatsApp, SEO\n\n- Homepage: full-width hero, stats bar, 2x2 services, testimonials, CTA banner\n- Navigation: sticky header \\(transparent on homepage\\), dropdown menus, mobile WhatsApp/phone\n- Footer: 4-column layout with company info, links, services, contact + social icons\n- WhatsApp: floating button on all pages with pulse animation\n- Service pages: hero banner, two-column layout with sidebar CTA + related services\n- Contact page: two-column layout with form, info cards, map, Waze link\n- Gallery: CSS masonry layout with GLightbox lightbox integration\n- Brands page: card grid with grayscale-to-color hover\n- Team/Nosotros: enhanced cards with role badges, image hover\n- SEO: JSON-LD LocalBusiness schema, sitemap plugin, robots.txt, meta descriptions\n- Typography: Inter body font, Playfair Display headings, extended color palette\n- Accessibility: skip-nav link, breadcrumbs, semantic HTML, aria labels\n- All pages build successfully on Jekyll + GitHub Pages\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)"
+    ]
+  }
+}

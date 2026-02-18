@@ -1,6 +1,6 @@
 ---
 title: Nosotros
-layout: page
+layout: modern-page
 description: "Conoce al equipo de Torrado Equipment. Más de 20 años especializados en maquinaria agrícola en Puerto Rico. Familia, experiencia y compromiso."
 bodyClass: page-nosotros
 ---

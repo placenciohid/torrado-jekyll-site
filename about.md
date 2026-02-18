@@ -1,6 +1,6 @@
 ---
 title: About
-layout: page
+layout: modern-page
 description: "Torrado Equipment: más de 20 años como líderes en venta, reparación y financiamiento de maquinaria agrícola en Puerto Rico."
 bodyClass: page-about
 ---

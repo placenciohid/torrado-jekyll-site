@@ -1,0 +1,124 @@
+---
+layout: modern-default
+---
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}
+    <p>{{ page.description }}</p>
+    {% endif %}
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="content-wrapper">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Contact Info -->
+      <div>
+        <div class="contact-info-card">
+          <h3><i class="fas fa-map-marker-alt"></i> Dirección</h3>
+          <p>
+            Hatillo, Puerto Rico<br>
+            <small style="color: var(--color-text-muted);">Servicio en toda la isla</small>
+          </p>
+        </div>
+        
+        <div class="contact-info-card">
+          <h3><i class="fas fa-phone"></i> Teléfono</h3>
+          <p>
+            <a href="tel:{{ site.data.contact.phone }}" style="color: var(--color-primary); font-weight: 600;">
+              {{ site.data.contact.phone }}
+            </a><br>
+            <small style="color: var(--color-text-muted);">Servicio de emergencia 24/7</small>
+          </p>
+        </div>
+        
+        <div class="contact-info-card">
+          <h3><i class="fas fa-envelope"></i> Correo Electrónico</h3>
+          <p>
+            <a href="mailto:{{ site.email }}" style="color: var(--color-primary);">
+              {{ site.email }}
+            </a>
+          </p>
+        </div>
+        
+        <div class="contact-info-card">
+          <h3><i class="fas fa-clock"></i> Horario</h3>
+          <p>
+            <strong>Lunes - Viernes:</strong> 8:00 AM - 5:00 PM<br>
+            <strong>Sábado:</strong> 8:00 AM - 12:00 PM<br>
+            <strong>Domingo:</strong> Cerrado<br>
+            <small style="color: var(--color-primary); font-weight: 600;">
+              <i class="fas fa-exclamation-circle"></i> Emergencias 24/7
+            </small>
+          </p>
+        </div>
+        
+        <div class="contact-info-card" style="background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light)); color: var(--color-white);">
+          <h3 style="color: var(--color-white);"><i class="fab fa-whatsapp" style="color: var(--color-accent);"></i> WhatsApp</h3>
+          <p style="color: rgba(255,255,255,0.9);">
+            Respuesta rápida por WhatsApp para cotizaciones y consultas.
+          </p>
+          <a href="https://wa.me/{{ site.data.contact.phone | replace: '-', '' | replace: ' ', '' }}" class="btn" style="background: #25d366; color: white; margin-top: var(--space-4);" target="_blank">
+            <i class="fab fa-whatsapp"></i> Iniciar Chat
+          </a>
+        </div>
+      </div>
+      
+      <!-- Contact Form -->
+      <div class="contact-form" style="background: var(--color-white); border-radius: var(--radius-xl); padding: var(--space-8); box-shadow: var(--shadow-lg);">
+        <h3 style="margin-bottom: var(--space-6);">Envíanos un Mensaje</h3>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-group">
+            <label for="name">Nombre Completo</label>
+            <input type="text" id="name" name="name" required placeholder="Tu nombre">
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" placeholder="(787) 123-4567">
+          </div>
+          
+          <div class="form-group">
+            <label for="service">Servicio de Interés</label>
+            <input type="text" id="service" name="service" placeholder="¿Qué servicio te interesa?">
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map Section -->
+<section class="section section-alt" style="padding-top: 0;">
+  <div class="container">
+    <div style="background: var(--color-white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15160.45646918933!2d-66.826666!3d18.486667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c02e6c7f3d0d4c3%3A0x5e3e7d5e8f4a6b9c!2sHatillo%2C%20Puerto%20Rico!5e0!3m2!1sen!2sus!4v1234567890"
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>

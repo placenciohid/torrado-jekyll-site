@@ -1,6 +1,6 @@
 ---
 title: Nuestro Equipo
-layout: teams
+layout: modern-teams
 description: Nuestro Equipo
 permalink: "/team/"
 intro_image_absolute: true
