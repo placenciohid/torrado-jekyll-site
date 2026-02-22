@@ -1,9 +1,9 @@
-baseurl: "/torrado-jekyll-site"
+baseurl: ""
 permalink: pretty
 title: Torrado Equipment
 email: torradoequipment@gmail.com
 description: "Tu socio confiable en maquinaria agrícola. Más de 20 años especializados en venta, reparación y financiamiento de equipos para optimizar tu operación agrícola en Puerto Rico."
-url: "https://placenciohid.github.io"
+url: ""
 
 logo:
   mobile: "assets/images/company_logo/logomobile.png"
