@@ -1,0 +1,7 @@
+{
+  "name": "torrado-jekyll-site",
+  "compatibility_date": "2026-02-22",
+  "assets": {
+    "directory": "./_site"
+  }
+}
