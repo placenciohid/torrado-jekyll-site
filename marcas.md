@@ -19,8 +19,9 @@ description: "Representamos las mejores marcas de maquinaria agrícola: Case IH,
   {% for brand_image in brand_images %}
     <div class="brand-card" style="padding: var(--space-6);">
       <div class="brand-card-logo" style="height: 100px;">
-        <img alt="{{ brand_image.name | split: '.' | first }}" src="{{ brand_image.path | relative_url }}" loading="lazy" style="filter: none;" />
+        <img alt="{{ brand_image.name | split: '.' | first | replace: '-', ' ' }}" src="{{ brand_image.path | relative_url }}" loading="lazy" style="filter: none;" />
       </div>
+      <span class="brand-card-name">{{ brand_image.name | split: '.' | first | replace: '-', ' ' }}</span>
     </div>
   {% endfor %}
 </div>

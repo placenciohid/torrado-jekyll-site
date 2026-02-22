@@ -2,57 +2,57 @@
 layout: modern-default
 ---
 
+<!-- Floating Contact Bar -->
+<div class="service-contact-bar">
+  <div class="container">
+    <span class="service-contact-bar-label">¿Necesitas ayuda con {{ page.title }}?</span>
+    <div class="service-contact-bar-actions">
+      <a href="tel:{{ site.data.contact.phone }}" class="service-contact-pill service-contact-pill--phone" title="Llamar ahora">
+        <i class="fas fa-phone-alt"></i>
+        <span>{{ site.data.contact.phone }}</span>
+      </a>
+      <a href="https://wa.me/{{ site.data.contact.phone | replace: '-', '' | replace: ' ', '' | replace: '(', '' | replace: ')' , '' }}?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20{{ page.title | url_encode }}" class="service-contact-pill service-contact-pill--whatsapp" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="{{ '/contact/' | relative_url }}" class="service-contact-pill service-contact-pill--email" title="Contactar">
+        <i class="fas fa-envelope"></i>
+        <span>Contacto</span>
+      </a>
+    </div>
+  </div>
+</div>
+
 <!-- Page Header -->
 <section class="page-header">
   <div class="container">
-    <div class="service-icon" style="margin: 0 auto var(--space-6); width: 80px; height: 80px;">
+    <div class="service-icon animate-float" style="margin: 0 auto var(--space-6); width: 80px; height: 80px;">
       {% if page.icon %}
         <i class="{{ page.icon }}" style="font-size: 2.5rem;"></i>
       {% else %}
         <i class="fas fa-cog" style="font-size: 2.5rem;"></i>
       {% endif %}
     </div>
-    <h1>{{ page.title }}</h1>
+    <h1 class="animate-fade-in">{{ page.title }}</h1>
     {% if page.description %}
-    <p>{{ page.description }}</p>
+    <p class="animate-fade-in" style="animation-delay: 0.15s;">{{ page.description }}</p>
     {% endif %}
   </div>
 </section>
 
-<!-- Service Content -->
+<!-- Service Content - Full Width -->
 <section class="content-wrapper">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="content-body">
-        {{ content }}
-        
-        <div class="mt-8">
-          <a href="{{ '/services/' | relative_url }}" class="btn btn-outline" style="color: var(--color-primary); border-color: var(--color-primary);">
-            <i class="fas fa-arrow-left"></i> Volver a Servicios
-          </a>
-        </div>
-      </div>
-      
-      <div>
-        <div class="contact-info-card">
-          <h3><i class="fas fa-phone"></i> ¿Necesitas Ayuda?</h3>
-          <p style="margin-bottom: var(--space-4);">
-            Habla con nuestros especialistas para más información sobre este servicio.
-          </p>
-          <a href="tel:{{ site.data.contact.phone }}" class="btn btn-primary" style="width: 100%;">
-            <i class="fas fa-phone-alt"></i> Llamar Ahora
-          </a>
-        </div>
-        
-        <div class="contact-info-card">
-          <h3><i class="fas fa-whatsapp"></i> WhatsApp</h3>
-          <p style="margin-bottom: var(--space-4);">
-            Escríbenos por WhatsApp para una respuesta rápida.
-          </p>
-          <a href="https://wa.me/{{ site.data.contact.phone | replace: '-', '' | replace: ' ', '' }}" class="btn btn-outline" style="width: 100%; color: #25d366; border-color: #25d366;" target="_blank">
-            <i class="fab fa-whatsapp"></i> Enviar Mensaje
-          </a>
-        </div>
+  <div class="container" style="max-width: 960px;">
+    <div class="content-body">
+      {{ content }}
+
+      <div class="mt-8" style="display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center;">
+        <a href="{{ '/services/' | relative_url }}" class="btn btn-outline" style="color: var(--color-primary); border-color: var(--color-primary);">
+          <i class="fas fa-arrow-left"></i> Volver a Servicios
+        </a>
+        <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Solicitar Cotización
+        </a>
       </div>
     </div>
   </div>

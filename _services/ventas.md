@@ -6,105 +6,52 @@ icon: "fas fa-tractor"
 description: "Venta de maquinaria agrícola nueva y usada certificada en Puerto Rico. Tractores, implementos, equipos de riego y más de las mejores marcas."
 ---
 
-<div class="service-content">
-
-<div class="service-hero">
+<div class="sv-split reveal">
   <div>
-    <span class="section-label">Nuestro Inventario</span>
-    <h2>Equipos Agrícolas de Primera Calidad</h2>
-    <p class="text-large">
-      Encuentra la <strong>maquinaria perfecta</strong> para tu operación agrícola. Nuestro inventario incluye equipos <strong>nuevos y usados certificados</strong> de las mejores marcas del mercado.
+    <p class="sv-lead">
+      Encuentra la <strong>maquinaria perfecta</strong> para tu operación. Nuestro inventario incluye equipos nuevos y usados certificados de más de 18 marcas reconocidas mundialmente.
     </p>
     <a href="{{ '/galeria/' | relative_url }}" class="btn btn-primary">
       <i class="fas fa-images"></i> Ver Galería de Equipos
     </a>
   </div>
-  <div class="service-hero-image">
-    <img src="{{ 'assets/images/equipement/AGRICULTURE-MACHINERY.jpg' | relative_url }}" alt="Equipos Agrícolas">
-  </div>
+  <img src="{{ 'assets/images/equipement/AGRICULTURE-MACHINERY.jpg' | relative_url }}" alt="Equipos Agrícolas Torrado">
 </div>
 
-<h3 class="section-title">Categorías de Equipos</h3>
-
-<div class="feature-grid">
-  <div class="feature-card">
-    <div class="feature-card-icon">
-      <i class="fas fa-tractor"></i>
-    </div>
-    <h4>Tractores</h4>
-    <p>De diversas potencias y configuraciones para todo tipo de terreno</p>
-  </div>
-  
-  <div class="feature-card">
-    <div class="feature-card-icon">
-      <i class="fas fa-cut"></i>
-    </div>
-    <h4>Equipos de Corte y Heno</h4>
-    <p>Cortadoras, empacadoras, rastrillos y más</p>
-  </div>
-  
-  <div class="feature-card">
-    <div class="feature-card-icon">
-      <i class="fas fa-blender"></i>
-    </div>
-    <h4>Maquinaria de Alimentación</h4>
-    <p>Mezcladoras, molinos, distribuidores</p>
-  </div>
-  
-  <div class="feature-card">
-    <div class="feature-card-icon">
-      <i class="fas fa-seedling"></i>
-    </div>
-    <h4>Equipos de Siembra</h4>
-    <p>Sembradoras, fertilizadoras de precisión</p>
-  </div>
-  
-  <div class="feature-card">
-    <div class="feature-card-icon">
-      <i class="fas fa-tint"></i>
-    </div>
-    <h4>Sistemas de Riego</h4>
-    <p>Para pastos mejorados y cultivos</p>
-  </div>
-  
-  <div class="feature-card">
-    <div class="feature-card-icon">
-      <i class="fas fa-truck-loading"></i>
-    </div>
-    <h4>Cargadoras e Implementos</h4>
-    <p>Skid loaders, arados, cultivadoras</p>
-  </div>
+<div class="sv-heading reveal">
+  <h3>Categorías de Equipos</h3>
+  <p>Tenemos lo que necesitas para cada etapa de tu operación agrícola.</p>
 </div>
 
-<div class="banner banner-primary">
-  <h3 class="center-text mb-8">¿Por qué elegir nuestros equipos?</h3>
-  <div class="value-grid">
-    <div class="value-item">
+<div class="sv-tags reveal">
+  <span class="sv-tag"><i class="fas fa-tractor"></i> Tractores</span>
+  <span class="sv-tag"><i class="fas fa-cut"></i> Equipos de Corte y Heno</span>
+  <span class="sv-tag"><i class="fas fa-blender"></i> Maquinaria de Alimentación</span>
+  <span class="sv-tag"><i class="fas fa-seedling"></i> Equipos de Siembra</span>
+  <span class="sv-tag"><i class="fas fa-tint"></i> Sistemas de Riego</span>
+  <span class="sv-tag"><i class="fas fa-truck-loading"></i> Cargadoras e Implementos</span>
+  <span class="sv-tag"><i class="fas fa-cogs"></i> Piezas de Desgaste</span>
+  <span class="sv-tag"><i class="fas fa-bolt"></i> Componentes Eléctricos</span>
+</div>
+
+<div class="sv-callout sv-callout--primary reveal">
+  <h3>¿Por qué comprar con nosotros?</h3>
+  <p style="opacity: 0.9; margin-bottom: var(--space-8);">Más de 20 años entregando resultados a agricultores en toda la isla.</p>
+  <div class="sv-benefits sv-benefits--boxed stagger-children" style="margin-bottom: 0;">
+    <div class="sv-benefit reveal">
       <i class="fas fa-search"></i>
       <h4>Inspección Rigurosa</h4>
-      <p>De cada máquina usada</p>
+      <p style="color: rgba(255,255,255,0.75);">Cada máquina usada verificada</p>
     </div>
-    <div class="value-item">
-      <i class="fas fa-shield-alt"></i>
-      <h4>Garantía Extendida</h4>
-      <p>En equipos seleccionados</p>
-    </div>
-    <div class="value-item">
+    <div class="sv-benefit reveal">
       <i class="fas fa-percentage"></i>
-      <h4>Financiamiento</h4>
-      <p>Con términos flexibles</p>
+      <h4>Financiamiento Flexible</h4>
+      <p style="color: rgba(255,255,255,0.75);">Con Farm Credit Express</p>
     </div>
-    <div class="value-item">
+    <div class="sv-benefit reveal">
       <i class="fas fa-truck"></i>
-      <h4>Entrega e Instalación</h4>
-      <p>Incluida en tu compra</p>
+      <h4>Entrega en Toda la Isla</h4>
+      <p style="color: rgba(255,255,255,0.75);">Instalación incluida</p>
     </div>
   </div>
-</div>
-
-<p class="highlight-text center-text mt-8">
-  <i class="fas fa-chart-line"></i>
-  Maximiza tu productividad con equipos que entregan resultados
-</p>
-
 </div>

@@ -25,18 +25,3 @@ glightbox: true
   {% endfor %}
 </div>
 
-<div style="background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light)); border-radius: var(--radius-2xl); padding: var(--space-12); margin-top: var(--space-16); color: var(--color-white); text-align: center;">
-  <h3 style="color: var(--color-white); margin-bottom: var(--space-4);">¿Te interesa algún equipo?</h3>
-  <p style="opacity: 0.9; max-width: 600px; margin: 0 auto var(--space-8);">
-    Contáctanos para conocer disponibilidad, precios y opciones de financiamiento. 
-    Nuestros especialistas te ayudarán a encontrar la máquina perfecta para tu operación.
-  </p>
-  <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
-    <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-lg" style="background: var(--color-accent); color: var(--color-gray-900);">
-      <i class="fas fa-envelope"></i> Solicitar Información
-    </a>
-    <a href="{{ '/services/ventas/' | relative_url }}" class="btn btn-outline btn-lg" style="border-color: white; color: white;">
-      <i class="fas fa-tractor"></i> Ver Servicios de Venta
-    </a>
-  </div>
-</div>

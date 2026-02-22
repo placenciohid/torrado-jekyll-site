@@ -57,29 +57,29 @@ layout: modern-default
 <!-- Features Bar -->
 <section class="section section-alt" style="padding: var(--space-12) 0;">
   <div class="container">
-    <div class="features-grid">
-      <div class="feature-item">
+    <div class="features-grid stagger-children">
+      <div class="feature-item reveal">
         <div class="feature-icon">
           <i class="fas fa-award"></i>
         </div>
         <h4>Calidad Garantizada</h4>
         <p>Equipos certificados de las mejores marcas</p>
       </div>
-      <div class="feature-item">
+      <div class="feature-item reveal">
         <div class="feature-icon">
           <i class="fas fa-tools"></i>
         </div>
         <h4>Servicio Técnico</h4>
         <p>Técnicos especializados disponibles</p>
       </div>
-      <div class="feature-item">
+      <div class="feature-item reveal">
         <div class="feature-icon">
           <i class="fas fa-percentage"></i>
         </div>
         <h4>Financiamiento</h4>
         <p>Opciones flexibles para tu inversión</p>
       </div>
-      <div class="feature-item">
+      <div class="feature-item reveal">
         <div class="feature-icon">
           <i class="fas fa-shipping-fast"></i>
         </div>
@@ -93,7 +93,7 @@ layout: modern-default
 <!-- Services Section -->
 <section class="section">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="section-label">Nuestros Servicios</span>
       <h2 class="section-title">Soluciones Completas para Tu Finca</h2>
       <p class="section-description">
@@ -101,9 +101,9 @@ layout: modern-default
       </p>
     </div>
     
-    <div class="services-grid">
+    <div class="services-grid stagger-children">
       {% for service in site.services limit:4 %}
-      <div class="service-card">
+      <div class="service-card reveal">
         <div class="service-icon">
           {% if service.icon %}
             <i class="{{ service.icon }}"></i>
@@ -120,7 +120,7 @@ layout: modern-default
       {% endfor %}
     </div>
     
-    <div class="text-center mt-8">
+    <div class="text-center mt-8 reveal">
       <a href="{{ '/services/' | relative_url }}" class="btn btn-primary">
         Ver Todos los Servicios <i class="fas fa-arrow-right"></i>
       </a>
@@ -159,7 +159,7 @@ layout: modern-default
 <!-- Testimonials Section -->
 <section class="testimonials-section">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="section-label" style="color: var(--color-accent);">Testimonios</span>
       <h2 class="section-title" style="color: var(--color-white);">Lo Que Dicen Nuestros Clientes</h2>
     </div>
@@ -213,7 +213,7 @@ layout: modern-default
 <!-- CTA Section -->
 <section class="cta-section">
   <div class="container">
-    <div class="cta-box">
+    <div class="cta-box reveal-scale">
       <h2>¿Listo para Potenciar Tu Finca?</h2>
       <p>
         Contáctanos hoy para una cotización gratuita. Nuestros expertos están listos 

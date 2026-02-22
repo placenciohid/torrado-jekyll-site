@@ -171,6 +171,31 @@
         mobileMenu.classList.remove('active');
       });
     });
+
+    // Scroll-triggered reveal animations
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // Parallax-lite on hero image
+    const heroSection = document.querySelector('.modern-hero::before, .modern-hero');
+    if (heroSection) {
+      window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        if (scrolled < window.innerHeight) {
+          const heroImg = heroSection.querySelector('.hero-image-wrapper img');
+          if (heroImg) {
+            heroImg.style.transform = 'scale(' + (1 + scrolled * 0.0003) + ') translateY(' + (scrolled * 0.15) + 'px)';
+          }
+        }
+      }, { passive: true });
+    }
   </script>
   
   {% if page.glightbox %}

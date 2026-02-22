@@ -4,7 +4,7 @@ date: 2025-08-17T12:00:00+00:00
 image: "assets/images/team/Berto.jpg"
 jobtitle: "CEO"
 linkedinurl: ""
-weight: 2
+weight: 1
 promoted: true
 ---
 

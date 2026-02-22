@@ -4,7 +4,7 @@ date: 2025-08-17T12:00:00+00:00
 image: "assets/images/team/Gal.jpg"
 jobtitle: "Directora de Bienestar y Moral del Equipo"
 linkedinurl: ""
-weight: 3
+weight: 4
 promoted: true
 ---
 

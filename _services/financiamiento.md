@@ -6,154 +6,94 @@ icon: "fas fa-dollar-sign"
 description: "Financiamiento flexible para equipos agrícolas con Farm Credit Express. Tasas competitivas, aprobación rápida y hasta 100% de financiamiento."
 ---
 
-<div class="service-content">
-
-<div class="banner banner-success center-text">
-  <i class="fas fa-piggy-bank" style="font-size: 3.5rem; margin-bottom: var(--space-4);"></i>
-  <h2>No Dejes Que el Capital Limite Tu Crecimiento</h2>
-  <p style="font-size: 1.25rem; opacity: 0.95; max-width: 700px; margin: 0 auto var(--space-6);">
-    Nuestras opciones de financiamiento te permiten adquirir el equipo que necesitas hoy y pagarlo con los ingresos que genere.
-  </p>
-  <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
-    <a href="{{ '/contact/' | relative_url }}" class="btn btn-lg" style="background: var(--color-white); color: #27ae60; font-weight: 700;">
-      <i class="fas fa-calculator"></i> Solicitar Pre-aprobación
-    </a>
-    <a href="tel:{{ site.data.contact.phone }}" class="btn btn-outline btn-lg" style="border-color: white; color: white;">
-      <i class="fas fa-phone-alt"></i> Hablar con un Especialista
-    </a>
-  </div>
-</div>
-
-<div class="service-hero mt-8">
-  <div style="background: var(--color-gray-100); border-radius: var(--radius-2xl); padding: var(--space-8); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 300px;">
-    <div class="center-text">
-      <i class="fas fa-university" style="font-size: 4rem; color: var(--color-primary); margin-bottom: var(--space-4);"></i>
-      <h3 style="margin-bottom: var(--space-2);">Farm Credit Express</h3>
-      <p style="color: var(--color-text-light);">Socios autorizados de la institución financiera líder en el sector agrícola</p>
-    </div>
-  </div>
-  <div>
-    <span class="section-label">Programa de Financiamiento</span>
-    <h2>Tasas Competitivas para Agricultores</h2>
-    <p class="text-large">
-      Somos <strong>socios autorizados</strong> de Farm Credit, la institución financiera líder en el sector agrícola. 
-      Ofrecemos las mejores condiciones para que inviertas en tu futuro.
-    </p>
-    <div class="icon-list mt-8">
-      <div class="icon-list-item">
-        <i class="fas fa-check-circle"></i>
-        <span>Tasas de interés competitivas especiales para agricultores</span>
-      </div>
-      <div class="icon-list-item">
-        <i class="fas fa-check-circle"></i>
-        <span>Plazos flexibles hasta 7 años según el equipo</span>
-      </div>
-      <div class="icon-list-item">
-        <i class="fas fa-check-circle"></i>
-        <span>Aprobación rápida - respuesta en 24-48 horas</span>
-      </div>
-      <div class="icon-list-item">
-        <i class="fas fa-check-circle"></i>
-        <span>Sin penalidades por pagos anticipados</span>
-      </div>
-      <div class="icon-list-item">
-        <i class="fas fa-check-circle"></i>
-        <span>Financiamiento hasta 100% del valor del equipo</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<h3 class="section-title">Equipos Elegibles para Financiamiento</h3>
-
-<div class="feature-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-  <div class="feature-card" style="text-align: center; border: 2px solid var(--color-border);">
-    <i class="fas fa-tractor" style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3);"></i>
-    <h4 style="margin-bottom: var(--space-1);">Tractores</h4>
-    <p style="color: var(--color-text-light); margin: 0; font-size: 0.875rem;">Y maquinaria pesada</p>
-  </div>
-  
-  <div class="feature-card" style="text-align: center; border: 2px solid var(--color-border);">
-    <i class="fas fa-tint" style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3);"></i>
-    <h4 style="margin-bottom: var(--space-1);">Sistemas de Riego</h4>
-    <p style="color: var(--color-text-light); margin: 0; font-size: 0.875rem;">Y equipos de campo</p>
-  </div>
-  
-  <div class="feature-card" style="text-align: center; border: 2px solid var(--color-border);">
-    <i class="fas fa-truck" style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3);"></i>
-    <h4 style="margin-bottom: var(--space-1);">Remolques</h4>
-    <p style="color: var(--color-text-light); margin: 0; font-size: 0.875rem;">Y equipos de transporte</p>
-  </div>
-  
-  <div class="feature-card" style="text-align: center; border: 2px solid var(--color-border);">
-    <i class="fas fa-industry" style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3);"></i>
-    <h4 style="margin-bottom: var(--space-1);">Procesamiento</h4>
-    <p style="color: var(--color-text-light); margin: 0; font-size: 0.875rem;">Y equipos de almacenamiento</p>
-  </div>
-  
-  <div class="feature-card" style="text-align: center; border: 2px solid var(--color-border);">
-    <i class="fas fa-cogs" style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3);"></i>
-    <h4 style="margin-bottom: var(--space-1);">Implementos</h4>
-    <p style="color: var(--color-text-light); margin: 0; font-size: 0.875rem;">Especializados</p>
-  </div>
-</div>
-
-<div class="banner banner-dark">
-  <h3 class="center-text mb-8">Ventajas Exclusivas</h3>
-  <div class="info-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-    <div style="background: rgba(255,255,255,0.05); border-radius: var(--radius-xl); padding: var(--space-6);">
-      <div style="width: 56px; height: 56px; background: var(--color-accent); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-4);">
-        <i class="fas fa-file-signature" style="color: var(--color-gray-900); font-size: 1.5rem;"></i>
-      </div>
-      <h4 style="color: var(--color-white); margin-bottom: var(--space-2);">Proceso Simplificado</h4>
-      <p style="opacity: 0.8; margin: 0;">Mínimo papeleo para agilizar tu solicitud</p>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.05); border-radius: var(--radius-xl); padding: var(--space-6);">
-      <div style="width: 56px; height: 56px; background: var(--color-accent); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-4);">
-        <i class="fas fa-user-tie" style="color: var(--color-gray-900); font-size: 1.5rem;"></i>
-      </div>
-      <h4 style="color: var(--color-white); margin-bottom: var(--space-2);">Asesoría Personalizada</h4>
-      <p style="opacity: 0.8; margin: 0;">Te ayudamos a estructurar tu financiamiento ideal</p>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.05); border-radius: var(--radius-xl); padding: var(--space-6);">
-      <div style="width: 56px; height: 56px; background: var(--color-accent); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-4);">
-        <i class="fas fa-calendar-alt" style="color: var(--color-gray-900); font-size: 1.5rem;"></i>
-      </div>
-      <h4 style="color: var(--color-white); margin-bottom: var(--space-2);">Pagos Estacionales</h4>
-      <p style="opacity: 0.8; margin: 0;">Adaptados al flujo de caja de tu operación agrícola</p>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.05); border-radius: var(--radius-xl); padding: var(--space-6);">
-      <div style="width: 56px; height: 56px; background: var(--color-accent); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-4);">
-        <i class="fas fa-shield-alt" style="color: var(--color-gray-900); font-size: 1.5rem;"></i>
-      </div>
-      <h4 style="color: var(--color-white); margin-bottom: var(--space-2);">Seguros Opcionales</h4>
-      <p style="opacity: 0.8; margin: 0;">Para proteger tu inversión durante todo el plazo</p>
-    </div>
-  </div>
-</div>
-
-<div class="banner banner-accent center-text">
-  <h2>¿Listo para Crecer?</h2>
-  <p style="font-size: 1.125rem; color: var(--color-gray-700); max-width: 600px; margin: 0 auto var(--space-6);">
-    Solicita tu pre-aprobación hoy y descubre cuánto puedes financiar. 
-    Nuestros especialistas te ayudarán a encontrar la solución perfecta para tu operación.
-  </p>
-  <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
-    <a href="{{ '/contact/' | relative_url }}" class="btn btn-lg" style="background: var(--color-gray-900); color: white;">
-      <i class="fas fa-paper-plane"></i> Solicitar Pre-aprobación
-    </a>
-    <a href="{{ '/services/ventas/' | relative_url }}" class="btn btn-outline btn-lg" style="border-color: var(--color-gray-900); color: var(--color-gray-900);">
-      <i class="fas fa-tractor"></i> Ver Equipos
-    </a>
-  </div>
-</div>
-
-<p class="highlight-text center-text mt-8">
-  <i class="fas fa-chart-line"></i>
-  Invierte en tu futuro. Financia tu éxito.
+<p class="sv-lead reveal">
+  No dejes que el capital limite tu crecimiento. Como <strong>socios autorizados de Farm Credit</strong>, ofrecemos financiamiento con las mejores condiciones del sector agrícola — para que inviertas en tu futuro hoy.
 </p>
 
+<div class="sv-heading reveal">
+  <h3>Cómo Solicitar</h3>
+  <p>Un proceso sencillo con respuesta en 24 a 48 horas.</p>
+</div>
+
+<div class="sv-steps sv-steps--connected reveal">
+  <div class="sv-step">
+    <div>
+      <h4>Elige tu Equipo</h4>
+      <p>Selecciona la maquinaria que necesitas de nuestro inventario</p>
+    </div>
+  </div>
+  <div class="sv-step">
+    <div>
+      <h4>Solicita Pre-aprobación</h4>
+      <p>Completa una solicitud sencilla con mínimo papeleo</p>
+    </div>
+  </div>
+  <div class="sv-step">
+    <div>
+      <h4>Recibe tu Equipo</h4>
+      <p>Aprobación rápida y entrega directa a tu finca</p>
+    </div>
+  </div>
+</div>
+
+<hr class="sv-divider">
+
+<div class="sv-heading reveal">
+  <h3>Equipos Elegibles</h3>
+  <p>Financiamiento disponible para toda nuestra línea de productos.</p>
+</div>
+
+<div class="sv-tags reveal">
+  <span class="sv-tag"><i class="fas fa-tractor"></i> Tractores</span>
+  <span class="sv-tag"><i class="fas fa-tint"></i> Sistemas de Riego</span>
+  <span class="sv-tag"><i class="fas fa-truck"></i> Remolques</span>
+  <span class="sv-tag"><i class="fas fa-industry"></i> Procesamiento</span>
+  <span class="sv-tag"><i class="fas fa-cogs"></i> Implementos</span>
+  <span class="sv-tag"><i class="fas fa-warehouse"></i> Almacenamiento</span>
+</div>
+
+<div class="sv-heading reveal">
+  <h3>Condiciones</h3>
+</div>
+
+<div class="sv-list reveal">
+  <div class="sv-list-item">
+    <i class="fas fa-check-circle"></i>
+    <span><strong>Tasas competitivas</strong> — Especiales para el sector agrícola con Farm Credit</span>
+  </div>
+  <div class="sv-list-item">
+    <i class="fas fa-check-circle"></i>
+    <span><strong>Plazos hasta 7 años</strong> — Según el tipo de equipo financiado</span>
+  </div>
+  <div class="sv-list-item">
+    <i class="fas fa-check-circle"></i>
+    <span><strong>Hasta 100% de financiamiento</strong> — Sin necesidad de pronto grande</span>
+  </div>
+  <div class="sv-list-item">
+    <i class="fas fa-check-circle"></i>
+    <span><strong>Sin penalidades por pago anticipado</strong> — Paga cuando puedas, sin cargos extra</span>
+  </div>
+  <div class="sv-list-item">
+    <i class="fas fa-check-circle"></i>
+    <span><strong>Pagos estacionales</strong> — Adaptados al flujo de caja de tu operación</span>
+  </div>
+  <div class="sv-list-item">
+    <i class="fas fa-check-circle"></i>
+    <span><strong>Asesoría personalizada</strong> — Te ayudamos a estructurar tu financiamiento ideal</span>
+  </div>
+</div>
+
+<div class="sv-callout sv-callout--primary reveal" style="text-align: center;">
+  <h3>¿Listo para Crecer?</h3>
+  <p style="opacity: 0.9; max-width: 500px; margin: 0 auto var(--space-6);">
+    Solicita tu pre-aprobación hoy y descubre cuánto puedes financiar.
+  </p>
+  <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+    <a href="{{ '/contact/' | relative_url }}" class="btn btn-lg" style="background: var(--color-accent); color: var(--color-gray-900);">
+      <i class="fas fa-paper-plane"></i> Solicitar Pre-aprobación
+    </a>
+    <a href="tel:{{ site.data.contact.phone }}" class="btn btn-outline btn-lg" style="border-color: white; color: white;">
+      <i class="fas fa-phone-alt"></i> Hablar con Especialista
+    </a>
+  </div>
 </div>

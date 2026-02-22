@@ -4,7 +4,7 @@ date: 2025-08-17T12:00:00+00:00
 image: "assets/images/team/Maria.jpg"
 jobtitle: "CEO"
 linkedinurl: ""
-weight: 4
+weight: 2
 promoted: true
 ---
 
