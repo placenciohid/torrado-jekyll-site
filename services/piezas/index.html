@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <!-- Styles -->
-  <link rel="stylesheet" href="/torrado-jekyll-site/assets/css/modern-theme.css">
+  <link rel="stylesheet" href="/assets/css/modern-theme.css">
   
   
   
@@ -25,10 +25,10 @@
   
   <meta property="og:title" content="Piezas">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://placenciohid.github.io/torrado-jekyll-site/services/piezas/">
+  <meta property="og:url" content="/services/piezas/">
   <meta name="twitter:card" content="summary">
   
-  <link rel="icon" type="image/png" href="/torrado-jekyll-site/images/favicon-32x32.svg">
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
   
   <script type="application/ld+json">
 {
@@ -36,7 +36,7 @@
   "@type": "LocalBusiness",
   "name": "Torrado Equipment",
   "description": "Tu socio confiable en maquinaria agrícola. Más de 20 años especializados en venta, reparación y financiamiento de equipos para optimizar tu operación agrícola en Puerto Rico.",
-  "url": "https://placenciohid.github.io/torrado-jekyll-site",
+  "url": "",
   "telephone": "+1 (787) 607-4304",
   "email": "capagro_pr@yahoo.com",
   "address": {
@@ -61,7 +61,7 @@
     }
   ],
   "priceRange": "$$",
-  "image": "https://placenciohid.github.io/torrado-jekyll-site/assets/images/company_logo/torradoequipment.png",
+  "image": "/assets/images/company_logo/torradoequipment.png",
   "sameAs": [
     "https://www.facebook.com/torradoequipment"
   ]
@@ -74,18 +74,18 @@
   <!-- Header -->
   <header class="modern-header" id="header">
     <div class="container">
-      <a href="/torrado-jekyll-site/" class="logo">
-        <img src="/torrado-jekyll-site/assets/images/company_logo/torradoequipment.png" alt="Torrado Equipment" height="50">
+      <a href="/" class="logo">
+        <img src="/assets/images/company_logo/torradoequipment.png" alt="Torrado Equipment" height="50">
       </a>
       
       <nav class="modern-nav">
-        <a href="/torrado-jekyll-site/">Inicio</a>
-        <a href="/torrado-jekyll-site/about/">Nosotros</a>
-        <a href="/torrado-jekyll-site/services/">Servicios</a>
-        <a href="/torrado-jekyll-site/marcas/">Marcas</a>
-        <a href="/torrado-jekyll-site/galeria/">Galería</a>
-        <a href="/torrado-jekyll-site/team/">Equipo</a>
-        <a href="/torrado-jekyll-site/contact/" class="btn-primary">Contáctanos</a>
+        <a href="/">Inicio</a>
+        <a href="/about/">Nosotros</a>
+        <a href="/services/">Servicios</a>
+        <a href="/marcas/">Marcas</a>
+        <a href="/galeria/">Galería</a>
+        <a href="/team/">Equipo</a>
+        <a href="/contact/" class="btn-primary">Contáctanos</a>
       </nav>
       
       <button class="menu-toggle" id="menuToggle" aria-label="Menu">
@@ -98,230 +98,141 @@
   
   <!-- Mobile Menu -->
   <nav class="mobile-menu" id="mobileMenu">
-    <a href="/torrado-jekyll-site/">Inicio</a>
-    <a href="/torrado-jekyll-site/about/">Nosotros</a>
-    <a href="/torrado-jekyll-site/services/">Servicios</a>
-    <a href="/torrado-jekyll-site/marcas/">Marcas</a>
-    <a href="/torrado-jekyll-site/galeria/">Galería</a>
-    <a href="/torrado-jekyll-site/team/">Equipo</a>
-    <a href="/torrado-jekyll-site/contact/">Contáctanos</a>
+    <a href="/">Inicio</a>
+    <a href="/about/">Nosotros</a>
+    <a href="/services/">Servicios</a>
+    <a href="/marcas/">Marcas</a>
+    <a href="/galeria/">Galería</a>
+    <a href="/team/">Equipo</a>
+    <a href="/contact/">Contáctanos</a>
   </nav>
   
   <!-- Main Content -->
   <main>
-    <!-- Page Header -->
+    <!-- Floating Contact Bar -->
+<div class="service-contact-bar">
+  <div class="container">
+    <span class="service-contact-bar-label">¿Necesitas ayuda con Piezas?</span>
+    <div class="service-contact-bar-actions">
+      <a href="tel:+1 (787) 607-4304" class="service-contact-pill service-contact-pill--phone" title="Llamar ahora">
+        <i class="fas fa-phone-alt"></i>
+        <span>+1 (787) 607-4304</span>
+      </a>
+      <a href="https://wa.me/+17876074304?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20Piezas" class="service-contact-pill service-contact-pill--whatsapp" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="/contact/" class="service-contact-pill service-contact-pill--email" title="Contactar">
+        <i class="fas fa-envelope"></i>
+        <span>Contacto</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Page Header -->
 <section class="page-header">
   <div class="container">
-    <div class="service-icon" style="margin: 0 auto var(--space-6); width: 80px; height: 80px;">
+    <div class="service-icon animate-float" style="margin: 0 auto var(--space-6); width: 80px; height: 80px;">
       
         <i class="fas fa-cogs" style="font-size: 2.5rem;"></i>
       
     </div>
-    <h1>Piezas</h1>
+    <h1 class="animate-fade-in">Piezas</h1>
     
-    <p>Repuestos originales y compatibles para maquinaria agrícola. Más de 10,000 piezas en inventario con entrega rápida en Puerto Rico.</p>
+    <p class="animate-fade-in" style="animation-delay: 0.15s;">Repuestos originales y compatibles para maquinaria agrícola. Más de 10,000 piezas en inventario con entrega rápida en Puerto Rico.</p>
     
   </div>
 </section>
 
-<!-- Service Content -->
+<!-- Service Content - Full Width -->
 <section class="content-wrapper">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="content-body">
-        <div class="service-content">
-
-<div class="service-hero">
-  <div>
-    <span class="section-label">Inventario</span>
-    <h2>Más de 10,000 Piezas en Stock</h2>
-    <p class="text-large">
-      <strong>El tiempo de inactividad cuesta dinero.</strong> Mantenemos un inventario extenso de repuestos originales y compatibles para mantener tu maquinaria operando al máximo rendimiento.
-    </p>
-    <div style="display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6);">
-      <span style="background: var(--color-primary); color: white; padding: var(--space-2) var(--space-4); border-radius: var(--radius-full); font-size: 0.875rem; font-weight: 600;">
-        <i class="fas fa-check"></i> Originales
-      </span>
-      <span style="background: var(--color-primary); color: white; padding: var(--space-2) var(--space-4); border-radius: var(--radius-full); font-size: 0.875rem; font-weight: 600;">
-        <i class="fas fa-check"></i> Compatibles
-      </span>
-      <span style="background: var(--color-accent); color: var(--color-gray-900); padding: var(--space-2) var(--space-4); border-radius: var(--radius-full); font-size: 0.875rem; font-weight: 600;">
-        <i class="fas fa-shipping-fast"></i> Entrega Rápida
-      </span>
-    </div>
+  <div class="container" style="max-width: 960px;">
+    <div class="content-body">
+      <div class="sv-metrics reveal">
+  <div class="sv-metric">
+    <span class="sv-metric-number">10,000+</span>
+    <span class="sv-metric-label">Piezas en Stock</span>
   </div>
-  <div class="stats-grid">
-    <div class="stat-card" style="background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light)); color: white;">
-      <i class="fas fa-warehouse" style="font-size: 2.5rem; margin-bottom: var(--space-3);"></i>
-      <div style="font-size: 2rem; font-weight: 800;">10,000+</div>
-      <div>Piezas en Stock</div>
-    </div>
-    <div class="stat-card" style="background: linear-gradient(135deg, var(--color-accent), #f5c836); color: var(--color-gray-900);">
-      <i class="fas fa-clock" style="font-size: 2.5rem; margin-bottom: var(--space-3);"></i>
-      <div style="font-size: 2rem; font-weight: 800;">24h</div>
-      <div>Entrega Urgente</div>
-    </div>
+  <div class="sv-metric">
+    <span class="sv-metric-number">24h</span>
+    <span class="sv-metric-label">Entrega Urgente</span>
+  </div>
+  <div class="sv-metric">
+    <span class="sv-metric-number">18+</span>
+    <span class="sv-metric-label">Marcas</span>
   </div>
 </div>
 
-<h3 class="section-title">Categorías de Repuestos</h3>
-
-<div class="feature-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
-  <div class="feature-card" style="text-align: center;">
-    <div class="feature-card-icon" style="margin: 0 auto var(--space-4);">
-      <i class="fas fa-certificate"></i>
-    </div>
-    <h4>Repuestos Originales</h4>
-    <p>De todas las marcas que representamos con garantía del fabricante</p>
-  </div>
-  
-  <div class="feature-card" style="text-align: center;">
-    <div class="feature-card-icon" style="margin: 0 auto var(--space-4);">
-      <i class="fas fa-puzzle-piece"></i>
-    </div>
-    <h4>Piezas Compatibles</h4>
-    <p>Alta calidad a precios competitivos para todo tipo de equipos</p>
-  </div>
-  
-  <div class="feature-card" style="text-align: center;">
-    <div class="feature-card-icon" style="margin: 0 auto var(--space-4);">
-      <i class="fas fa-tint"></i>
-    </div>
-    <h4>Componentes Hidráulicos</h4>
-    <p>Sistemas hidráulicos y de transmisión completos</p>
-  </div>
-  
-  <div class="feature-card" style="text-align: center;">
-    <div class="feature-card-icon" style="margin: 0 auto var(--space-4);">
-      <i class="fas fa-filter"></i>
-    </div>
-    <h4>Filtros y Lubricantes</h4>
-    <p>Especializados para maquinaria agrícola pesada</p>
-  </div>
-  
-  <div class="feature-card" style="text-align: center;">
-    <div class="feature-card-icon" style="margin: 0 auto var(--space-4);">
-      <i class="fas fa-cog"></i>
-    </div>
-    <h4>Piezas de Desgaste</h4>
-    <p>Para mantenimiento rutinario y reemplazo constante</p>
-  </div>
-  
-  <div class="feature-card" style="text-align: center;">
-    <div class="feature-card-icon" style="margin: 0 auto var(--space-4);">
-      <i class="fas fa-microchip"></i>
-    </div>
-    <h4>Componentes Electrónicos</h4>
-    <p>Sistemas de control y sensores modernos</p>
-  </div>
-</div>
-
-<div class="banner banner-primary">
-  <div class="service-hero" style="margin-bottom: 0;">
-    <div>
-      <h3>¿Necesitas una pieza urgente?</h3>
-      <p class="text-large" style="opacity: 0.95;">
-        Nuestro servicio de emergencia localiza y entrega repuestos críticos en menos de 24 horas. 
-        No dejes que tu operación se detenga.
-      </p>
-      <a href="tel:+1 (787) 607-4304" class="btn btn-lg" style="background: var(--color-accent); color: var(--color-gray-900); margin-top: var(--space-4);">
-        <i class="fas fa-phone-alt"></i> Llamar Ahora
-      </a>
-    </div>
-    <div style="display: flex; flex-direction: column; gap: var(--space-4);">
-      <div style="background: rgba(255,255,255,0.1); border-radius: var(--radius-lg); padding: var(--space-4); display: flex; align-items: center; gap: var(--space-3);">
-        <i class="fas fa-check-circle" style="color: var(--color-accent); font-size: 1.5rem;"></i>
-        <span>Identificación precisa con números de serie</span>
-      </div>
-      <div style="background: rgba(255,255,255,0.1); border-radius: var(--radius-lg); padding: var(--space-4); display: flex; align-items: center; gap: var(--space-3);">
-        <i class="fas fa-check-circle" style="color: var(--color-accent); font-size: 1.5rem;"></i>
-        <span>Asesoría técnica para instalación</span>
-      </div>
-      <div style="background: rgba(255,255,255,0.1); border-radius: var(--radius-lg); padding: var(--space-4); display: flex; align-items: center; gap: var(--space-3);">
-        <i class="fas fa-check-circle" style="color: var(--color-accent); font-size: 1.5rem;"></i>
-        <span>Descuentos por volumen disponibles</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div style="background: var(--color-gray-50); border-radius: var(--radius-2xl); padding: var(--space-10); margin: var(--space-10) 0;">
-  <h3 class="center-text mb-8">Ventajas de Nuestro Servicio</h3>
-  <div class="info-grid">
-    <div class="info-card" style="background: var(--color-white);">
-      <div class="info-card-icon">
-        <i class="fas fa-boxes"></i>
-      </div>
-      <div>
-        <h4>Inventario Amplio</h4>
-        <p style="color: var(--color-text-light); margin: 0; font-size: 0.9375rem;">Más de 10,000 piezas disponibles</p>
-      </div>
-    </div>
-    <div class="info-card" style="background: var(--color-white);">
-      <div class="info-card-icon">
-        <i class="fas fa-shipping-fast"></i>
-      </div>
-      <div>
-        <h4>Entrega Rápida</h4>
-        <p style="color: var(--color-text-light); margin: 0; font-size: 0.9375rem;">Mismo día en área metropolitana</p>
-      </div>
-    </div>
-    <div class="info-card" style="background: var(--color-white);">
-      <div class="info-card-icon">
-        <i class="fas fa-shield-alt"></i>
-      </div>
-      <div>
-        <h4>Garantía Extendida</h4>
-        <p style="color: var(--color-text-light); margin: 0; font-size: 0.9375rem;">En repuestos originales</p>
-      </div>
-    </div>
-    <div class="info-card" style="background: var(--color-white);">
-      <div class="info-card-icon">
-        <i class="fas fa-tag"></i>
-      </div>
-      <div>
-        <h4>Precios Competitivos</h4>
-        <p style="color: var(--color-text-light); margin: 0; font-size: 0.9375rem;">Con descuentos por volumen</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<p class="highlight-text center-text mt-8">
-  <i class="fas fa-cogs"></i>
-  Mantén tu operación en marcha con repuestos de confianza
+<p class="sv-lead reveal">
+  <strong>El tiempo de inactividad cuesta dinero.</strong> Mantenemos un inventario extenso de repuestos originales y compatibles para que tu maquinaria nunca deje de operar.
 </p>
 
+<div class="sv-heading reveal">
+  <h3>Categorías de Repuestos</h3>
+  <p>Originales y compatibles para todo tipo de maquinaria agrícola.</p>
 </div>
 
-        
-        <div class="mt-8">
-          <a href="/torrado-jekyll-site/services/" class="btn btn-outline" style="color: var(--color-primary); border-color: var(--color-primary);">
-            <i class="fas fa-arrow-left"></i> Volver a Servicios
-          </a>
-        </div>
-      </div>
-      
-      <div>
-        <div class="contact-info-card">
-          <h3><i class="fas fa-phone"></i> ¿Necesitas Ayuda?</h3>
-          <p style="margin-bottom: var(--space-4);">
-            Habla con nuestros especialistas para más información sobre este servicio.
-          </p>
-          <a href="tel:+1 (787) 607-4304" class="btn btn-primary" style="width: 100%;">
-            <i class="fas fa-phone-alt"></i> Llamar Ahora
-          </a>
-        </div>
-        
-        <div class="contact-info-card">
-          <h3><i class="fas fa-whatsapp"></i> WhatsApp</h3>
-          <p style="margin-bottom: var(--space-4);">
-            Escríbenos por WhatsApp para una respuesta rápida.
-          </p>
-          <a href="https://wa.me/+1(787)6074304" class="btn btn-outline" style="width: 100%; color: #25d366; border-color: #25d366;" target="_blank">
-            <i class="fab fa-whatsapp"></i> Enviar Mensaje
-          </a>
-        </div>
+<div class="sv-tags reveal">
+  <span class="sv-tag"><i class="fas fa-certificate"></i> Repuestos Originales</span>
+  <span class="sv-tag"><i class="fas fa-puzzle-piece"></i> Piezas Compatibles</span>
+  <span class="sv-tag"><i class="fas fa-tint"></i> Componentes Hidráulicos</span>
+  <span class="sv-tag"><i class="fas fa-filter"></i> Filtros y Lubricantes</span>
+  <span class="sv-tag"><i class="fas fa-cog"></i> Piezas de Desgaste</span>
+  <span class="sv-tag"><i class="fas fa-microchip"></i> Componentes Electrónicos</span>
+</div>
+
+<hr class="sv-divider" />
+
+<div class="sv-heading reveal">
+  <h3>Lo que nos diferencia</h3>
+</div>
+
+<div class="sv-list reveal">
+  <div class="sv-list-item">
+    <i class="fas fa-check"></i>
+    <span><strong>Inventario amplio</strong> — Más de 10,000 piezas disponibles de inmediato</span>
+  </div>
+  <div class="sv-list-item">
+    <i class="fas fa-check"></i>
+    <span><strong>Entrega rápida</strong> — Mismo día en área metropolitana</span>
+  </div>
+  <div class="sv-list-item">
+    <i class="fas fa-check"></i>
+    <span><strong>Identificación precisa</strong> — Con números de serie para cada equipo</span>
+  </div>
+  <div class="sv-list-item">
+    <i class="fas fa-check"></i>
+    <span><strong>Asesoría técnica</strong> — Te ayudamos con la instalación</span>
+  </div>
+  <div class="sv-list-item">
+    <i class="fas fa-check"></i>
+    <span><strong>Garantía del fabricante</strong> — En todos los repuestos originales</span>
+  </div>
+  <div class="sv-list-item">
+    <i class="fas fa-check"></i>
+    <span><strong>Descuentos por volumen</strong> — Precios competitivos para compras recurrentes</span>
+  </div>
+</div>
+
+<div class="sv-alert sv-alert--accent reveal">
+  <div class="sv-alert-content">
+    <h4><i class="fas fa-bolt"></i> ¿Necesitas una pieza urgente?</h4>
+    <p>Nuestro servicio de emergencia localiza y entrega repuestos críticos en menos de 24 horas.</p>
+  </div>
+  <a href="tel:+1 (787) 607-4304" class="sv-alert-action">
+    <i class="fas fa-phone-alt"></i> Llamar Ahora
+  </a>
+</div>
+
+
+      <div class="mt-8" style="display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center;">
+        <a href="/services/" class="btn btn-outline" style="color: var(--color-primary); border-color: var(--color-primary);">
+          <i class="fas fa-arrow-left"></i> Volver a Servicios
+        </a>
+        <a href="/contact/" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Solicitar Cotización
+        </a>
       </div>
     </div>
   </div>
@@ -334,8 +245,8 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="/torrado-jekyll-site/" class="logo">
-            <img src="/torrado-jekyll-site/assets/images/company_logo/torradoequipment.png" alt="Torrado Equipment" height="50">
+          <a href="/" class="logo">
+            <img src="/assets/images/company_logo/torradoequipment.png" alt="Torrado Equipment" height="50">
           </a>
           <p>Tu socio confiable en maquinaria agrícola. Más de 20 años especializados en venta, reparación y financiamiento de equipos para optimizar tu operación agrícola en Puerto Rico.</p>
           <div class="footer-social">
@@ -348,10 +259,10 @@
         <div class="footer-column">
           <h4>Enlaces</h4>
           <ul>
-            <li><a href="/torrado-jekyll-site/">Inicio</a></li>
-            <li><a href="/torrado-jekyll-site/about/">Nosotros</a></li>
-            <li><a href="/torrado-jekyll-site/services/">Servicios</a></li>
-            <li><a href="/torrado-jekyll-site/team/">Equipo</a></li>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/about/">Nosotros</a></li>
+            <li><a href="/services/">Servicios</a></li>
+            <li><a href="/team/">Equipo</a></li>
           </ul>
         </div>
         
@@ -359,13 +270,13 @@
           <h4>Servicios</h4>
           <ul>
             
-            <li><a href="/torrado-jekyll-site/services/ventas/">Ventas</a></li>
+            <li><a href="/services/ventas/">Ventas</a></li>
             
-            <li><a href="/torrado-jekyll-site/services/reparacion/">Reparación</a></li>
+            <li><a href="/services/reparacion/">Reparación</a></li>
             
-            <li><a href="/torrado-jekyll-site/services/piezas/">Piezas</a></li>
+            <li><a href="/services/piezas/">Piezas</a></li>
             
-            <li><a href="/torrado-jekyll-site/services/financiamiento/">Financiamiento</a></li>
+            <li><a href="/services/financiamiento/">Financiamiento</a></li>
             
           </ul>
         </div>
@@ -429,6 +340,31 @@
         mobileMenu.classList.remove('active');
       });
     });
+
+    // Scroll-triggered reveal animations
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // Parallax-lite on hero image
+    const heroSection = document.querySelector('.modern-hero::before, .modern-hero');
+    if (heroSection) {
+      window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        if (scrolled < window.innerHeight) {
+          const heroImg = heroSection.querySelector('.hero-image-wrapper img');
+          if (heroImg) {
+            heroImg.style.transform = 'scale(' + (1 + scrolled * 0.0003) + ') translateY(' + (scrolled * 0.15) + 'px)';
+          }
+        }
+      }, { passive: true });
+    }
   </script>
   
   

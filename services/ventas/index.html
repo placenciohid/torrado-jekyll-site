@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <!-- Styles -->
-  <link rel="stylesheet" href="/torrado-jekyll-site/assets/css/modern-theme.css">
+  <link rel="stylesheet" href="/assets/css/modern-theme.css">
   
   
   
@@ -25,10 +25,10 @@
   
   <meta property="og:title" content="Ventas">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://placenciohid.github.io/torrado-jekyll-site/services/ventas/">
+  <meta property="og:url" content="/services/ventas/">
   <meta name="twitter:card" content="summary">
   
-  <link rel="icon" type="image/png" href="/torrado-jekyll-site/images/favicon-32x32.svg">
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
   
   <script type="application/ld+json">
 {
@@ -36,7 +36,7 @@
   "@type": "LocalBusiness",
   "name": "Torrado Equipment",
   "description": "Tu socio confiable en maquinaria agrícola. Más de 20 años especializados en venta, reparación y financiamiento de equipos para optimizar tu operación agrícola en Puerto Rico.",
-  "url": "https://placenciohid.github.io/torrado-jekyll-site",
+  "url": "",
   "telephone": "+1 (787) 607-4304",
   "email": "capagro_pr@yahoo.com",
   "address": {
@@ -61,7 +61,7 @@
     }
   ],
   "priceRange": "$$",
-  "image": "https://placenciohid.github.io/torrado-jekyll-site/assets/images/company_logo/torradoequipment.png",
+  "image": "/assets/images/company_logo/torradoequipment.png",
   "sameAs": [
     "https://www.facebook.com/torradoequipment"
   ]
@@ -74,18 +74,18 @@
   <!-- Header -->
   <header class="modern-header" id="header">
     <div class="container">
-      <a href="/torrado-jekyll-site/" class="logo">
-        <img src="/torrado-jekyll-site/assets/images/company_logo/torradoequipment.png" alt="Torrado Equipment" height="50">
+      <a href="/" class="logo">
+        <img src="/assets/images/company_logo/torradoequipment.png" alt="Torrado Equipment" height="50">
       </a>
       
       <nav class="modern-nav">
-        <a href="/torrado-jekyll-site/">Inicio</a>
-        <a href="/torrado-jekyll-site/about/">Nosotros</a>
-        <a href="/torrado-jekyll-site/services/">Servicios</a>
-        <a href="/torrado-jekyll-site/marcas/">Marcas</a>
-        <a href="/torrado-jekyll-site/galeria/">Galería</a>
-        <a href="/torrado-jekyll-site/team/">Equipo</a>
-        <a href="/torrado-jekyll-site/contact/" class="btn-primary">Contáctanos</a>
+        <a href="/">Inicio</a>
+        <a href="/about/">Nosotros</a>
+        <a href="/services/">Servicios</a>
+        <a href="/marcas/">Marcas</a>
+        <a href="/galeria/">Galería</a>
+        <a href="/team/">Equipo</a>
+        <a href="/contact/" class="btn-primary">Contáctanos</a>
       </nav>
       
       <button class="menu-toggle" id="menuToggle" aria-label="Menu">
@@ -98,168 +98,115 @@
   
   <!-- Mobile Menu -->
   <nav class="mobile-menu" id="mobileMenu">
-    <a href="/torrado-jekyll-site/">Inicio</a>
-    <a href="/torrado-jekyll-site/about/">Nosotros</a>
-    <a href="/torrado-jekyll-site/services/">Servicios</a>
-    <a href="/torrado-jekyll-site/marcas/">Marcas</a>
-    <a href="/torrado-jekyll-site/galeria/">Galería</a>
-    <a href="/torrado-jekyll-site/team/">Equipo</a>
-    <a href="/torrado-jekyll-site/contact/">Contáctanos</a>
+    <a href="/">Inicio</a>
+    <a href="/about/">Nosotros</a>
+    <a href="/services/">Servicios</a>
+    <a href="/marcas/">Marcas</a>
+    <a href="/galeria/">Galería</a>
+    <a href="/team/">Equipo</a>
+    <a href="/contact/">Contáctanos</a>
   </nav>
   
   <!-- Main Content -->
   <main>
-    <!-- Page Header -->
+    <!-- Floating Contact Bar -->
+<div class="service-contact-bar">
+  <div class="container">
+    <span class="service-contact-bar-label">¿Necesitas ayuda con Ventas?</span>
+    <div class="service-contact-bar-actions">
+      <a href="tel:+1 (787) 607-4304" class="service-contact-pill service-contact-pill--phone" title="Llamar ahora">
+        <i class="fas fa-phone-alt"></i>
+        <span>+1 (787) 607-4304</span>
+      </a>
+      <a href="https://wa.me/+17876074304?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20Ventas" class="service-contact-pill service-contact-pill--whatsapp" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="/contact/" class="service-contact-pill service-contact-pill--email" title="Contactar">
+        <i class="fas fa-envelope"></i>
+        <span>Contacto</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Page Header -->
 <section class="page-header">
   <div class="container">
-    <div class="service-icon" style="margin: 0 auto var(--space-6); width: 80px; height: 80px;">
+    <div class="service-icon animate-float" style="margin: 0 auto var(--space-6); width: 80px; height: 80px;">
       
         <i class="fas fa-tractor" style="font-size: 2.5rem;"></i>
       
     </div>
-    <h1>Ventas</h1>
+    <h1 class="animate-fade-in">Ventas</h1>
     
-    <p>Venta de maquinaria agrícola nueva y usada certificada en Puerto Rico. Tractores, implementos, equipos de riego y más de las mejores marcas.</p>
+    <p class="animate-fade-in" style="animation-delay: 0.15s;">Venta de maquinaria agrícola nueva y usada certificada en Puerto Rico. Tractores, implementos, equipos de riego y más de las mejores marcas.</p>
     
   </div>
 </section>
 
-<!-- Service Content -->
+<!-- Service Content - Full Width -->
 <section class="content-wrapper">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="content-body">
-        <div class="service-content">
-
-<div class="service-hero">
+  <div class="container" style="max-width: 960px;">
+    <div class="content-body">
+      <div class="sv-split reveal">
   <div>
-    <span class="section-label">Nuestro Inventario</span>
-    <h2>Equipos Agrícolas de Primera Calidad</h2>
-    <p class="text-large">
-      Encuentra la <strong>maquinaria perfecta</strong> para tu operación agrícola. Nuestro inventario incluye equipos <strong>nuevos y usados certificados</strong> de las mejores marcas del mercado.
+    <p class="sv-lead">
+      Encuentra la <strong>maquinaria perfecta</strong> para tu operación. Nuestro inventario incluye equipos nuevos y usados certificados de más de 18 marcas reconocidas mundialmente.
     </p>
-    <a href="/torrado-jekyll-site/galeria/" class="btn btn-primary">
+    <a href="/galeria/" class="btn btn-primary">
       <i class="fas fa-images"></i> Ver Galería de Equipos
     </a>
   </div>
-  <div class="service-hero-image">
-    <img src="/torrado-jekyll-site/assets/images/equipement/AGRICULTURE-MACHINERY.jpg" alt="Equipos Agrícolas" />
-  </div>
+  <img src="/assets/images/equipement/AGRICULTURE-MACHINERY.jpg" alt="Equipos Agrícolas Torrado" />
 </div>
 
-<h3 class="section-title">Categorías de Equipos</h3>
-
-<div class="feature-grid">
-  <div class="feature-card">
-    <div class="feature-card-icon">
-      <i class="fas fa-tractor"></i>
-    </div>
-    <h4>Tractores</h4>
-    <p>De diversas potencias y configuraciones para todo tipo de terreno</p>
-  </div>
-  
-  <div class="feature-card">
-    <div class="feature-card-icon">
-      <i class="fas fa-cut"></i>
-    </div>
-    <h4>Equipos de Corte y Heno</h4>
-    <p>Cortadoras, empacadoras, rastrillos y más</p>
-  </div>
-  
-  <div class="feature-card">
-    <div class="feature-card-icon">
-      <i class="fas fa-blender"></i>
-    </div>
-    <h4>Maquinaria de Alimentación</h4>
-    <p>Mezcladoras, molinos, distribuidores</p>
-  </div>
-  
-  <div class="feature-card">
-    <div class="feature-card-icon">
-      <i class="fas fa-seedling"></i>
-    </div>
-    <h4>Equipos de Siembra</h4>
-    <p>Sembradoras, fertilizadoras de precisión</p>
-  </div>
-  
-  <div class="feature-card">
-    <div class="feature-card-icon">
-      <i class="fas fa-tint"></i>
-    </div>
-    <h4>Sistemas de Riego</h4>
-    <p>Para pastos mejorados y cultivos</p>
-  </div>
-  
-  <div class="feature-card">
-    <div class="feature-card-icon">
-      <i class="fas fa-truck-loading"></i>
-    </div>
-    <h4>Cargadoras e Implementos</h4>
-    <p>Skid loaders, arados, cultivadoras</p>
-  </div>
+<div class="sv-heading reveal">
+  <h3>Categorías de Equipos</h3>
+  <p>Tenemos lo que necesitas para cada etapa de tu operación agrícola.</p>
 </div>
 
-<div class="banner banner-primary">
-  <h3 class="center-text mb-8">¿Por qué elegir nuestros equipos?</h3>
-  <div class="value-grid">
-    <div class="value-item">
+<div class="sv-tags reveal">
+  <span class="sv-tag"><i class="fas fa-tractor"></i> Tractores</span>
+  <span class="sv-tag"><i class="fas fa-cut"></i> Equipos de Corte y Heno</span>
+  <span class="sv-tag"><i class="fas fa-blender"></i> Maquinaria de Alimentación</span>
+  <span class="sv-tag"><i class="fas fa-seedling"></i> Equipos de Siembra</span>
+  <span class="sv-tag"><i class="fas fa-tint"></i> Sistemas de Riego</span>
+  <span class="sv-tag"><i class="fas fa-truck-loading"></i> Cargadoras e Implementos</span>
+  <span class="sv-tag"><i class="fas fa-cogs"></i> Piezas de Desgaste</span>
+  <span class="sv-tag"><i class="fas fa-bolt"></i> Componentes Eléctricos</span>
+</div>
+
+<div class="sv-callout sv-callout--primary reveal">
+  <h3>¿Por qué comprar con nosotros?</h3>
+  <p style="opacity: 0.9; margin-bottom: var(--space-8);">Más de 20 años entregando resultados a agricultores en toda la isla.</p>
+  <div class="sv-benefits sv-benefits--boxed stagger-children" style="margin-bottom: 0;">
+    <div class="sv-benefit reveal">
       <i class="fas fa-search"></i>
       <h4>Inspección Rigurosa</h4>
-      <p>De cada máquina usada</p>
+      <p style="color: rgba(255,255,255,0.75);">Cada máquina usada verificada</p>
     </div>
-    <div class="value-item">
-      <i class="fas fa-shield-alt"></i>
-      <h4>Garantía Extendida</h4>
-      <p>En equipos seleccionados</p>
-    </div>
-    <div class="value-item">
+    <div class="sv-benefit reveal">
       <i class="fas fa-percentage"></i>
-      <h4>Financiamiento</h4>
-      <p>Con términos flexibles</p>
+      <h4>Financiamiento Flexible</h4>
+      <p style="color: rgba(255,255,255,0.75);">Con Farm Credit Express</p>
     </div>
-    <div class="value-item">
+    <div class="sv-benefit reveal">
       <i class="fas fa-truck"></i>
-      <h4>Entrega e Instalación</h4>
-      <p>Incluida en tu compra</p>
+      <h4>Entrega en Toda la Isla</h4>
+      <p style="color: rgba(255,255,255,0.75);">Instalación incluida</p>
     </div>
   </div>
 </div>
 
-<p class="highlight-text center-text mt-8">
-  <i class="fas fa-chart-line"></i>
-  Maximiza tu productividad con equipos que entregan resultados
-</p>
 
-</div>
-
-        
-        <div class="mt-8">
-          <a href="/torrado-jekyll-site/services/" class="btn btn-outline" style="color: var(--color-primary); border-color: var(--color-primary);">
-            <i class="fas fa-arrow-left"></i> Volver a Servicios
-          </a>
-        </div>
-      </div>
-      
-      <div>
-        <div class="contact-info-card">
-          <h3><i class="fas fa-phone"></i> ¿Necesitas Ayuda?</h3>
-          <p style="margin-bottom: var(--space-4);">
-            Habla con nuestros especialistas para más información sobre este servicio.
-          </p>
-          <a href="tel:+1 (787) 607-4304" class="btn btn-primary" style="width: 100%;">
-            <i class="fas fa-phone-alt"></i> Llamar Ahora
-          </a>
-        </div>
-        
-        <div class="contact-info-card">
-          <h3><i class="fas fa-whatsapp"></i> WhatsApp</h3>
-          <p style="margin-bottom: var(--space-4);">
-            Escríbenos por WhatsApp para una respuesta rápida.
-          </p>
-          <a href="https://wa.me/+1(787)6074304" class="btn btn-outline" style="width: 100%; color: #25d366; border-color: #25d366;" target="_blank">
-            <i class="fab fa-whatsapp"></i> Enviar Mensaje
-          </a>
-        </div>
+      <div class="mt-8" style="display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center;">
+        <a href="/services/" class="btn btn-outline" style="color: var(--color-primary); border-color: var(--color-primary);">
+          <i class="fas fa-arrow-left"></i> Volver a Servicios
+        </a>
+        <a href="/contact/" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Solicitar Cotización
+        </a>
       </div>
     </div>
   </div>
@@ -272,8 +219,8 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="/torrado-jekyll-site/" class="logo">
-            <img src="/torrado-jekyll-site/assets/images/company_logo/torradoequipment.png" alt="Torrado Equipment" height="50">
+          <a href="/" class="logo">
+            <img src="/assets/images/company_logo/torradoequipment.png" alt="Torrado Equipment" height="50">
           </a>
           <p>Tu socio confiable en maquinaria agrícola. Más de 20 años especializados en venta, reparación y financiamiento de equipos para optimizar tu operación agrícola en Puerto Rico.</p>
           <div class="footer-social">
@@ -286,10 +233,10 @@
         <div class="footer-column">
           <h4>Enlaces</h4>
           <ul>
-            <li><a href="/torrado-jekyll-site/">Inicio</a></li>
-            <li><a href="/torrado-jekyll-site/about/">Nosotros</a></li>
-            <li><a href="/torrado-jekyll-site/services/">Servicios</a></li>
-            <li><a href="/torrado-jekyll-site/team/">Equipo</a></li>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/about/">Nosotros</a></li>
+            <li><a href="/services/">Servicios</a></li>
+            <li><a href="/team/">Equipo</a></li>
           </ul>
         </div>
         
@@ -297,13 +244,13 @@
           <h4>Servicios</h4>
           <ul>
             
-            <li><a href="/torrado-jekyll-site/services/ventas/">Ventas</a></li>
+            <li><a href="/services/ventas/">Ventas</a></li>
             
-            <li><a href="/torrado-jekyll-site/services/reparacion/">Reparación</a></li>
+            <li><a href="/services/reparacion/">Reparación</a></li>
             
-            <li><a href="/torrado-jekyll-site/services/piezas/">Piezas</a></li>
+            <li><a href="/services/piezas/">Piezas</a></li>
             
-            <li><a href="/torrado-jekyll-site/services/financiamiento/">Financiamiento</a></li>
+            <li><a href="/services/financiamiento/">Financiamiento</a></li>
             
           </ul>
         </div>
@@ -367,6 +314,31 @@
         mobileMenu.classList.remove('active');
       });
     });
+
+    // Scroll-triggered reveal animations
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // Parallax-lite on hero image
+    const heroSection = document.querySelector('.modern-hero::before, .modern-hero');
+    if (heroSection) {
+      window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        if (scrolled < window.innerHeight) {
+          const heroImg = heroSection.querySelector('.hero-image-wrapper img');
+          if (heroImg) {
+            heroImg.style.transform = 'scale(' + (1 + scrolled * 0.0003) + ') translateY(' + (scrolled * 0.15) + 'px)';
+          }
+        }
+      }, { passive: true });
+    }
   </script>
   
   
